@@ -3,6 +3,17 @@
 
 @import "{{ site.theme }}";
 
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+body {
+  font-family: Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.page-header {
+  background-color: #dd2222;
+  background-image: linear-gradient(120deg, #dd2222, #ed2939);
+}
+
 .main-content {
   h1 {
    color: #dd2222;
