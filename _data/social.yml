@@ -1,0 +1,20 @@
+- title: LinkedIn
+  url: "https://www.linkedin.com/in/marstupa/"
+  icon: icon-linkedin
+
+- title: Behance
+  url: "https://www.behance.net/marstupa"
+  icon: icon-behance
+
+- title: Twitter
+  url: "https://twitter.com/marstupa"
+  icon: icon-twitter
+
+- title: Instagram
+  url: "https://www.instagram.com/marstupa/"
+  icon: icon-instagram
+
+
+- title: Email
+  url: "mailto:marija.stupar@gmail.com"
+  icon: icon-mail

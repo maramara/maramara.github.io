@@ -1,6 +1,6 @@
 ---
 layout: default
-title: See what I worked on
+title: Projects
 description: I focus on delivering value to customers in the B2B domain.
 permalink: /projects/
 ---
