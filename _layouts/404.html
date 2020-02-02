@@ -38,20 +38,29 @@
 </ul>
 
 <header class="page-header" role="banner">
-
-    {% if page.url == "/" %}
-    <img alt="Marija Stupar profile picture" src="/assets/img/profile.jpg" class="thumbnail thumbnail-rounded" width="180" height="180">
-    {% endif %}
     <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
     <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline
         }}</h2>
-    {% if page.url == "/" %}
-    <p class="project-tagline text-small"><span class="highlighted"></span> The "j" is silent (:</p>
-    {% endif %}
 </header>
 
-<main id="content" class="main-content" role="main">
+<main id="content" class="main-content text-center" role="main">
+
+    <div id="image-load" style="margin-top: -80px"></div>
+
     {{ content }}
+
+    <br>
+    <p>
+        You can also <a href="/" title="Home">go to start page</a> or <a href="/projects/" title="Home">check my projects</a>.
+    </p>
+    <br>
+
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+
+    <script>
+        var images = ['cat1.jpg', 'cat2.jpg', 'cat3.jpg', 'cat4.jpg', 'cat5.jpg', 'cat6.jpg'];
+        $('<img class="thumbnail" src="/assets/img/cats/' + images[Math.floor(Math.random() * images.length)] + '" width="500" height="333">').appendTo('#image-load');
+    </script>
 
     <footer class="site-footer text-center">
         {% include social.html %}
