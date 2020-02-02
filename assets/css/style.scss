@@ -30,7 +30,10 @@ body {
 
 .page-header {
   background-color: #dd2222;
-  background-image: linear-gradient(-40deg, $header-bg-color 0%, $header-bg-color-secondary 100%);
+  background-image: url(/assets/img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 
 .menu {
@@ -56,7 +59,7 @@ body {
 .thumbnail {
   border: 6px solid #fff;
   border-radius: 3px;
-  box-shadow: 2px 2px 2rem 0 rgba(0, 0, 0, .2);
+  box-shadow: 2px 2px 1rem 0 rgba(0, 0, 0, .2);
 }
 
 .thumbnail-rounded {
@@ -128,4 +131,16 @@ a {
 .site-footer-credits {
   display: inline-block;
   margin-top: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5rem;
+}
+.grid-item {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 2px 2px 1rem 0 rgba(0, 0, 0, .2);
+  padding: 1.5rem;
 }
