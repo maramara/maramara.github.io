@@ -43,24 +43,16 @@
         }}</h2>
 </header>
 
-<main id="content" class="main-content text-center" role="main">
+<main id="content" class="main-content" role="main">
 
-    <div id="image-load" style="margin-top: -80px"></div>
+    <div id="image-load" style="margin-top: -80px">
+        <img src="{{ page.image }}" alt="{{ page.title }}" />
+    </div>
 
     {{ content }}
 
     <br>
-    <p>
-        You can also <a href="/" title="Home">go to start page</a> or <a href="/projects/" title="Home">check my projects</a>.
-    </p>
-    <br>
-
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
-
-    <script>
-        var images = ['cat1.jpg', 'cat2.jpg', 'cat3.jpg', 'cat4.jpg', 'cat5.jpg', 'cat6.jpg'];
-        $('<img class="thumbnail" src="/assets/img/cats/' + images[Math.floor(Math.random() * images.length)] + '" width="500" height="333">').appendTo('#image-load');
-    </script>
+    <a href="/projects/">Back to Projects</a>
 
     <footer class="site-footer text-center">
         {% include social.html %}
