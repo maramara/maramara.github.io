@@ -2,6 +2,7 @@
 layout: project-page
 title: Bunch.ai
 description: Product discovery and redesign
+thumbnail: /assets/img/bun/img-bun.jpg
 image: /assets/img/bun/head-bun.png
 order: 2
 ---
@@ -53,7 +54,7 @@ We found that not many use machine learning to drive hiring process or assess te
 - Job candidates
 -  Team members
 
-## Research and ideation
+## User research and ideation
 
 We conducted 20+ user and customer development interviews to get key insights into pain points of team leaders in team management and hiring. 
 We used those to create our personas and map their user journey.
@@ -102,9 +103,9 @@ The pattern library consists of the following sections:
 - **Compositions :** Parts comprised of multiple components; they define how components inside should behave.
 - **Layouts:**  Actual screens of the project - each page consists of an arrangement of Compositions and Components.
 
-![User journey](/assets/img/bun/bun-cl.jpg)
+![Bunch component library](/assets/img/bun/bun-cl.jpg)
 
-![User journey](/assets/img/bun/bun-ui.jpg)
+![Bunch application UI](/assets/img/bun/bun-ui.jpg)
 
 ## Project outcomes
 

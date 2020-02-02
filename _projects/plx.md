@@ -2,6 +2,7 @@
 layout: project-page
 title: Powerlinx
 description: Product engagement optimization
+thumbnail: /assets/img/plx/img-plx.jpg
 image: /assets/img/plx/head-plx.png
 order: 1
 ---

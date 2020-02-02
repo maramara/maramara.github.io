@@ -51,13 +51,12 @@
 
         {% for project in sorted %}
         <div class="grid-item text-center">
-            <img src="{{ project.image}}" alt="{{ project.title }}" width="100%">
+            <img src="{{ project.thumbnail}}" alt="{{ project.title }}" width="100%" style="border: 1px solid #eeeeee;">
             <h3><a href="{{ project.url }}">{{ project.description }}</a></h3>
             <p>{{ project.title }}</p>
         </div>
         {% endfor %}
     </div>
-
 
     <footer class="site-footer text-center">
         {% include social.html %}

@@ -2,6 +2,7 @@
 layout: project-page
 title: Memgraph 
 description: Introducing a design system for quicker application development
+thumbnail: /assets/img/mgr/img-mgr.jpg
 image: /assets/img/mgr/head-mgr.png
 order: 3
 ---
@@ -23,9 +24,82 @@ It is engineered to support the needs of enterprises with colossal amounts of da
  Memgraph's Demo Applications need to showcase live previews of different datasets in order to better represent the product’s functionalities to prospective clients. 
 Use cases cover industries such as telecommunication, finance or IT network management. The demos are usually presented at meetings and on trade shows and need to be quickly developed and adjusted. 
 
+## Research
 
+We collected all the product feedback we had from meeting prospective or existing clients, looked into competitors and had co-creation workshops to define the best possible solutions for data visualization.
+We also took a deep look at competitors to see how they tackle the problem of complex graph data visualization.
 
+We laid out a customer journey based on the feedback collected from surveying early adopters and target audience.
+We found out that we needed to focus our efforts on users from two sides - the business side (decision makers) and technical side (developers).
 
+![Journey mapping](/assets/img/mgr/mgr-uj.jpg)
 
-![Usability findings](/assets/img/plx/plx-ut.jpg)
+### Problems
 
+- How to enable users to navigate through real-time graph data seamlessly?
+- How can users (especially ones with decision power) better understand if Memgraph can handle their data?
+- How can Memgraph promote brand awareness on trade shows and business meetings?
+        
+### Goals
+
+- Showcase Memgraph’s capabilities to prospective clients in real-time
+- Enable Memgraph team to easily create and deploy new use-case demo applications when needed    
+
+### Target audience
+
+- System administrator
+-  Database administrator 
+- Data scientist 
+- C-Level Management (CTOs)
+
+## Ideation
+
+We wanted to showcase 5 different use-cases of Memgraph, but keep a consistent look and feel between them. 
+The first step in doing that was to identify requirements for demos and to lay out the modular layout that can accommodate all of these features.
+
+Main Requirements for demo applications
+- **Card Fraud Detection**
+    - settings for defining transaction parameters 
+    - option to run a query, which yields the result  represented in a graph
+- **StrataData Conference Connector **
+    - show conference-related data in real-time in a graph  and make it searchable 
+    - allow real-time preview of new attendees and tweets  related to the conference during the conference
+- **Data Lineage with GitHub Commits** 
+    - run example queries on a given dataset and show   the result in a graph
+- **Blockchain Analysis ()Anti Money Laundering)**
+     - run example queries on a given dataset, show results  in tabular and graph mode
+- **Impact Analysis with NPM Packages**
+     - show color-coded risk analysis of dependencies for listed packages
+
+![Demo lo-fi wireframes](/assets/img/mgr/mgr-wf.jpg)
+
+I made detailed wireframes and flow diagrams for all five demo use-cases to serve as a reference point for testing and communication with stakeholders and developers when progressing towards development. 
+Example below is for the ConConnector demo.
+
+![ConConnector wireframes](/assets/img/mgr/mgr-cc-wf.jpg)
+
+## UI design
+
+Consistent UI design was imperative for all applications, to ensure smooth experience when demonstrating product capabilities.
+To achieve this, a simple Sketch library was built. Consistency also meant that modular design ensured that same components can be reused during development process.
+
+![UI design](/assets/img/mgr/mgr-sk.jpg)
+
+Image below shows four screens coming from different applications.
+
+![UI design](/assets/img/mgr/mgr-ui.jpg)
+
+## From design to implementation
+
+After initial wireframing iterations, I was able to create a modular design with components that can be easily extended for specific needs.
+The implementation of design followed the atomic design philosophy and was served from one central place into all of the demo applications for ease of use and maintenance.
+
+The central design repository also consists of a simple dynamic style guide for easier implementation into future projects.
+
+![UI design](/assets/img/mgr/mgr-ds.jpg)
+
+## Project outcomes
+
+- Since the demo applications are internal tools and we don't track the usual analytics on them, the benefits are measured quantitatively through a set of general business KPIs such as lead generation rate
+- The ConConnector demo has proved to be a very successful tool for lead generation during the Strata Data Conference because of it's real-time experience
+- The “show, don’t tell” approach saved time and increased engagement when presenting Memgraph to prospective clients or investors
