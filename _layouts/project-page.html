@@ -53,7 +53,21 @@
     {{ content }}
 
     <br>
-    <a href="/projects/">Back to Projects</a>
+    <hr>
+
+    <h3>Check out other projects:</h3>
+    {% assign sorted = site.projects | sort: 'order' | reverse %}
+    <ul>
+        {% for project in sorted %}
+        <li>
+            <a href="{{ project.url }}" style="color: #606c71">{{ project.description }} <span class="icon-right-open-mini"></span> {{ project.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <a href="/projects/">Back to all projects</a>
+
+    <br>
 
     <footer class="site-footer text-center">
         {% include social.html %}
