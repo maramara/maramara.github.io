@@ -1,2 +1,14 @@
 title: Marija Stupar
 theme: jekyll-theme-cayman
+
+collections:
+  projects:
+    output: true
+    permalink: :collection/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: projects

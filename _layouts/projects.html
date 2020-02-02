@@ -38,23 +38,22 @@
 </ul>
 
 <header class="page-header" role="banner">
-
-    {% if page.url == "/" %}
-    <img alt="Marija Stupar profile picture" src="/assets/img/profile.jpg" class="thumbnail thumbnail-rounded" width="180" height="180">
-    {% endif %}
     <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-
-    {% if page.description %}
     <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline
         }}</h2>
-    {% endif %}
-    {% if page.url == "/" %}
-    <p class="project-tagline text-small"><span class="highlighted"></span> The "j" is silent (:</p>
-    {% endif %}
 </header>
 
 <main id="content" class="main-content" role="main">
     {{ content }}
+
+    <ul>
+        {% for post in site.projects %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
 
     <footer class="site-footer text-center">
         {% include social.html %}
