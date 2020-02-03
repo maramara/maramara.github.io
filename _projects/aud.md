@@ -1,7 +1,7 @@
 ---
 layout: project-page
 title: dunnhumby Media
-description: Product discovery for audience targeting
+description: "Product discovery for in-house project - Audience targeting"
 thumbnail: /assets/img/aud/img-aud.jpg
 image: /assets/img/aud/head-aud.png
 order: 5
