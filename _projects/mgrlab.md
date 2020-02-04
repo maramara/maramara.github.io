@@ -50,6 +50,7 @@ In the first (beta) iteration of the project, we tried to focus on two activitie
 Another point of focus was exploration of the querying process where users should be enabled to perform consecutive database queries, save them and also search for them.
 
 ![Memgraph Lab Wireframes](/assets/img/mgrlab/mgrlab-wf.jpg)
+*Memgraph Lab Wireframes*
 
 ### Key findings
 
@@ -65,11 +66,12 @@ The overview of database queries with separate lists for query history and favor
 
 ## UI design 
 
-UI design of the appication follows the [previously established](/projects/mgr/) look and feel of the brand.
+UI design of the application follows the [previously established](/projects/mgr/) look and feel of the brand.
 In two iterations, there were adjustments to the statistics on the dashboard (based on user feedback) and top navigation was removed since this is a desktop application. 
 Project frontend was developed by reusing existing components and styles.
 
 ![Memgraph Lab UI](/assets/img/mgrlab/mgrlab-ui.jpg)
+*Memgraph Lab UI*
 
 ## Project outcomes
 

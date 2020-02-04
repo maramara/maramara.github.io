@@ -66,8 +66,10 @@ We conducted design sprints to discover: 
 - What kind of information would team members like to see about the team they’re in
 
 ![Research notes](/assets/img/bun/bun-res.jpg)
+*Research notes*
 
 ![User journey](/assets/img/bun/bun-uj.jpg)
+*User journey for middle management persona*
 
 
 ### Key Findings
@@ -104,8 +106,10 @@ The pattern library consists of the following sections:
 - **Layouts:**  Actual screens of the project - each page consists of an arrangement of Compositions and Components.
 
 ![Bunch component library](/assets/img/bun/bun-cl.jpg)
+*Bunch component library in Sketch*
 
 ![Bunch application UI](/assets/img/bun/bun-ui.jpg)
+*Bunch application UI*
 
 ## Project outcomes
 

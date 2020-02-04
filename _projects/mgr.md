@@ -33,6 +33,7 @@ We laid out a customer journey based on the feedback collected from surveying ea
 We found out that we needed to focus our efforts on users from two sides - the business side (decision makers) and technical side (developers).
 
 ![Journey mapping](/assets/img/mgr/mgr-uj.jpg)
+*Journey mapping*
 
 ### Problems
 
@@ -72,11 +73,13 @@ Main Requirements for demo applications
      - show color-coded risk analysis of dependencies for listed packages
 
 ![Demo lo-fi wireframes](/assets/img/mgr/mgr-wf.jpg)
+*Demo low fidelity wireframes*
 
 I made detailed wireframes and flow diagrams for all five demo use-cases to serve as a reference point for testing and communication with stakeholders and developers when progressing towards development. 
 Example below is for the ConConnector demo.
 
 ![ConConnector wireframes](/assets/img/mgr/mgr-cc-wf.jpg)
+*ConConnector wireframes*
 
 ## UI design
 
@@ -84,10 +87,12 @@ Consistent UI design was imperative for all applications, to ensure smooth exper
 To achieve this, a simple Sketch library was built. Consistency also meant that modular design ensured that same components can be reused during development process.
 
 ![UI design](/assets/img/mgr/mgr-sk.jpg)
+*Component library in Sketch for Memgraph project*
 
 Image below shows four screens coming from different applications.
 
 ![UI design](/assets/img/mgr/mgr-ui.jpg)
+*Memgraph demo applications - UI*
 
 ## From design to implementation
 
@@ -96,7 +101,9 @@ The implementation of design followed the atomic design philosophy and was serve
 
 The central design repository also consists of a simple dynamic style guide for easier implementation into future projects.
 
-![UI design](/assets/img/mgr/mgr-ds.jpg)
+![Repository structure](/assets/img/mgr/mgr-ds.jpg)
+
+*Design system modularity*
 
 ## Project outcomes
 
