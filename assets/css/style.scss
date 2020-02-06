@@ -34,7 +34,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  padding: 5rem 7rem;
+  padding: 5rem 2rem;
+
+  .project-name, .project-tagline {
+    max-width: 1000px;
+    margin: 1rem auto;
+  }
 }
 
 .menu {
