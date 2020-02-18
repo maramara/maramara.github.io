@@ -1,0 +1,10 @@
+<ul class="menu">
+  <li>
+    <a href="/" title="Home" class="link-fancy" style="padding-bottom: 0.3rem;">
+      <img alt="Marija Stupar - Logo" src="/assets/img/logo.svg" width="34" height="36" />
+    </a>
+  </li>
+  {% for item in site.data.navigation %}
+  <li><a href="{{item.url}}" alt="{{item.title}}" class="link-fancy">{{item.title}}</a></li>
+  {% endfor %}
+</ul>
