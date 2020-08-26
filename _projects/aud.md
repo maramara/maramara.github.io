@@ -90,6 +90,7 @@ The development for the project relied on using the in-house component library w
 
 ## Project outcomes
 
-- Project was developed within half a year, and product adoption across the company was rolled out. The next phase for this project would include the research on external clients and finding a way of turning an in-house product into SaaS.
+- Project was developed within half a year, and product adoption across the company was rolled out. The next phase for this project will include the research on external clients and finding a way of turning an in-house product into SaaS.
 - Setting aside three months to do a thorough product discovery and user research gave everyone involved more clarity and ensured that team members can focus on features that matter.
 - On top of that, some more general inconsistencies in the campaign management process were discovered that forced the company to reexamine and improve ways of working.
+- This project also served as a guinea pig in improving the product discovery process within the company, you can read more about it [here](https://medium.com/dunnhumby-data-science-engineering/from-unknown-to-clarity-user-experience-in-the-product-discovery-process-461aeac32526)
