@@ -15,8 +15,8 @@ order: 5
 
 ## Introduction 
 
-dunnhumby Media tools help advertisers to grow Customer loyalty and enable retailers to monetise their owned media.
-The retail media platform powered by Customer Data Science and includes many different offerings.
+dunnhumby Media tools help advertisers to grow Customer loyalty and enable retailers to monetise their own media.
+The retail media platform is powered by customer data science which includes many different targeting capabilities.
 
 ## Problem space
 
@@ -32,11 +32,11 @@ This was used to form assumptions and to guide us through the user interviews fo
 ![Product vision canvas](/assets/img/aud/aud-pv.jpeg)
 *Product vision canvas*
 
-### Problems
+### Problems defined
 
 - How to enable media planners to define targeting themselves since they have a knowledge gap and often need help from data analysts?
 - How to define what are the internal processes that can be optimized by automatization?
-- How to define the product scope since we differentiate between standard and customized targetings, and science has different methods of serving those?
+- How to define the product scope since we differentiate between standard and customized targetings, and the data science has different methods of serving those?
 
 ### Goals
 
@@ -57,9 +57,9 @@ This was used to form assumptions and to guide us through the user interviews fo
 
 ## User research and ideation
 
-With assumptions formed, we created an interview script aimed at internal users, with questions that cover general media campaign process and targetings.
-In total, the team consisting of 2 designers and one product person interviewed 35 people in 5 different roles inside the company.
-Common pain-points and needs were discovered by synthesizing the interview notes into affinity map. Based on this, we created a user journey for Analysts, who became our main user focus.
+With assumptions formed, we created an interview script aimed at in-house users, with questions that cover general media campaign process and current use targetings.
+In total, the team consisting of 2 designers and one product manager interviewed 35 people in 5 different roles inside the company.
+Common pain-points and needs were discovered by synthesizing the interview notes into affinity map. Based on this, we created a user journey for data analysts, who became our main user focus.
 For deeper understanding, we also mapped the process of media campaign creation to better understand the dynamics between different roles involved in daily work.
 
 ![User journey](/assets/img/aud/aud-uj.jpeg)
@@ -70,26 +70,26 @@ For deeper understanding, we also mapped the process of media campaign creation 
 
 ### Key Findings
 
-Following findings were discovered during the research:
+The following findings were discovered during the research:
 
 - There are differences in how targeted campaigns are run per different market
-- There are too many possible communication points towards external users
+- There are too many possible communication points towards company clients
 - Users would prefer to not be involved in daily manual chores and to have an automated place to create and obtain targeting files
 
 ## Design and development
 
-Together with product person, UX designers have defined a high level requirements to design specific scenarios, so we could validate some technical and UX assumptions about the features of the product.
-We designed a low fidelity prototype and ran usability tests with around 15 users in two iterations. 
+Together with product manager, we defined high level requirements to design specific scenarios, so we could validate some technical and UX assumptions about the features of the product.
+We designed a low fidelity prototype and ran usability tests with around 15 users in two iterations. The sessions were run remotely and conducted by us two designers and our product manager to ensure we always have two people attending the session. 
 This helped to decide on the final set of requirements for the MVP, and enabled the UX team to start thinking about the UI design.
 
-The design produced for the project relied on previously established global dunnhumby UI guidelines, but also introduced some new components such as side navigation, step wizard and fluid grid layout.
-The development for the project relies on using the in-house component library which needed to be updated to accommodate all the changes that were required.
+The design produced for the project relied on previously established global dunnhumby UI guidelines, but also introduced some new improvements such as new side navigation, step wizard and fluid grid layout.
+The development for the project relied on using the in-house component library which needed to be updated to accommodate all the changes that were required.
 
 ![UI design](/assets/img/aud/aud-ui.png)
 *UI design of Audiences product*
 
 ## Project outcomes
 
-- Project MVP is currently in development, with successful sprints. The next phase would include examining external users and finding a way of turning an in-house product into SaaS.
+- Project was developed within half a year, and product adoption across the company was rolled out. The next phase for this project would include the research on external clients and finding a way of turning an in-house product into SaaS.
 - Setting aside three months to do a thorough product discovery and user research gave everyone involved more clarity and ensured that team members can focus on features that matter.
-- On top of that, some more general inconsistencies in the campaign management process were discovered that forced the company to reexamine and change them.
+- On top of that, some more general inconsistencies in the campaign management process were discovered that forced the company to reexamine and improve ways of working.

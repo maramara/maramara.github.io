@@ -21,16 +21,16 @@ It is engineered to support the needs of enterprises with colossal amounts of da
 
 ## Problem space
 
-The project was expanding and needed to build an application that provides a visual user interface to manipulate graph database data.
+The product was expanding beyond terminal and needed to create an application that provides a visual user interface to manipulate graph database data.
 
 ## Research
 
 Research continued based on the initial one made for the [same company](/projects/mgr/), this time focusing more at gathering feedback from users (through surveys) that primarily manipulate database data.
 
-### Problems
+### Problems defined
 
-- How to enable data scientists to  get insights from the data?
-- How to visualise complex  graph database query results?
+- How to enable data scientists to get insights from the data?
+- How to visualise complex graph database query results?
 - What is needed to monitor and maintain the database?
 - How to make running queries easier?
 
@@ -54,14 +54,14 @@ Another point of focus was exploration of the querying process where users shoul
 
 ### Key findings
 
-I tested our assumptions by setting up unmoderated usability studies based on the lo-fi prototypes that were created out of wireframes.
+I tested our assumptions by setting up unmoderated usability studies based on the lo-fi prototypes that were created out of Sketch wireframes.
 Key findings that were discovered during the research:
 
 - Different user roles want to use tools tailored to their needs
 - Users need a seamless way to interconnect tools that they are using (management vs. querying)
 - The space to run and manage queries needs to be distraction-free zone
 
-Monitoring and querying of data proved to not work well for users because they wanted to focus on one action at the time, depending on their role (for example, business analyst would not be interested to know what is the workload of the database).
+Monitoring and querying of data proved to not work well for users because they wanted to focus on one action at the time, depending on their role (for example, a business analyst might not be interested to know what is the workload of the database).
 The overview of database queries with separate lists for query history and favorites proved to work better for users.
 
 ## UI design 
@@ -75,4 +75,4 @@ Project frontend was developed by reusing existing components and styles.
 
 ## Project outcomes
 
-The beta version of the project was published on time and is freely available. 
+The beta version of the project was published on time and is freely available at [https://memgraph.com/](). 

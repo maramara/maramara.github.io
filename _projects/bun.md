@@ -16,26 +16,26 @@ order: 2
 ## Introduction 
 
 Bunch is a team management platform that helps high-growth companies to develop a strong culture. 
-Bunch maps a team’s culture baseline, allowing companies to screen all candidates for team fit and predict their impact on culture and performance. 
+Bunch maps a team's culture baseline, allowing companies to screen all candidates for team fit and predict their impact on culture and performance. 
 
 The platform enables companies to create highly-aligned teams and shape their culture to boost business growth.
 
 ## Problem space
 
- Build an application that empowers hiring managers and team leaders to make informed decisions about hiring.
-They should be able to send questionnaire invitations to job candidates and team members. 
-Completing the questionnaire reveals their personal profiles.
+- Create an experience that empowers hiring managers and team leaders to make informed decisions about hiring
+- Users should be able to send questionnaire invitations to job candidates and team members
+- Completing the questionnaire reveals candidate's personal profiles
 
 ## Research
 
 Since Bunch started shifting focus away from hiring into team dynamics, we needed to re-evaluate and extend our previous research. 
 We started with user interviews and an extensive competitor research.
 
-An extensive look at competitors in the HR industry gave us deep insights from marketing and product side. 
+I started with an extensive look at competitors in the HR industry which gave us deep insights from marketing and product side.
 We screened 43 competitors, ranging from team surveys, HR tools, performance management tools and BI tools to communication analysis tools.
-We found that not many use machine learning to drive hiring process or assess team culture. 
+We found that not many use machine learning to drive hiring process or assess team culture.
 
-### Problems
+### Problems defined
 
 - How to make the questionnaire experience easy and valuable?
 - How to ensure the trustworthiness of the results shown in the profile?
@@ -50,20 +50,20 @@ We found that not many use machine learning to drive hiring process or assess te
 ### Target audience
 
 - Hiring managers
--  Team leaders 
+- Team leaders 
 - Job candidates
--  Team members
+- Team members
 
 ## User research and ideation
 
-We conducted 20+ user and customer development interviews to get key insights into pain points of team leaders in team management and hiring. 
+We conducted 20+ user and customer development interviews to get key insights into pain points of team leaders in team management and hiring. Interviews were done in person or remotely.
 We used those to create our personas and map their user journey.
 
-We conducted design sprints to discover: 
+The whole team then conducted design sprints to discover: 
 
-- What’s the best approach for quiz usability aimed at team members and job candidates     
+- What's the best approach for quiz usability aimed at team members and job candidates     
 - What kind of actionable insights might help team leaders and hiring managers to improve teams 
-- What kind of information would team members like to see about the team they’re in
+- What kind of information would team members like to see about the team they're in
 
 ![Research notes](/assets/img/bun/bun-res.jpg)
 *Research notes*
@@ -82,14 +82,14 @@ Following findings were discovered during the research:
 - There are privacy concerns for profile creation based on the questionnaire as well as communication analysis
 - Social proof plays a big role in the perception of the product
 
-With all the data collected with initial research and through design sprints, we became focused on the problem of defining and building team culture. 
-The target audience is company administrators, team members and job candidates.
+With all the data collected by initial research and through design sprints, we shifted focus on the problem of defining and building team culture, with target audience being team leaders, team members and job candidates.
+Once the initial set of features that we wanted to test was agreed on by the team and product manager, we decided to parallelize the work where possible.
 
-The wireframes were made into a clickable prototype and tested by another UX designer, while simultaneously I started working on the pattern library for the project.
+To speed up execution work, the wireframes tested by another UX designer, while I started focusing on UI design.
 
 ## UI design
 
-UI design for the application was defined by me, based on the branding styleguide done by outside agency.
+UI design for the application was defined by me, based on the brand guidelines done by an outside agency.
 
 ### Pattern Library
 
@@ -97,7 +97,7 @@ While the lo-fi prototype was being tested and improved, I started working on th
 The pattern library is based on the Atomic Design concept where we defined small individual elements that can be used to build bigger ones.
 The master Sketch file was used for making updates and sharing them through Craft library to all team members.
 
-The publicly available style guide (https://styleguide.bunch.ai/) was set up as part of the project using React Storybook.
+The publicly available style guide [https://styleguide.bunch.ai/]() was set up as part of the project using React Storybook.
 The pattern library consists of the following sections:
 - **Identity :** The core brand elements to be used throughout the app.
 - **Elements :** Smallest reusable parts in the project, with all their states, defined.

@@ -21,7 +21,7 @@ It is engineered to support the needs of enterprises with colossal amounts of da
 
 ## Problem space
 
- Memgraph's Demo Applications need to showcase live previews of different datasets in order to better represent the product’s functionalities to prospective clients. 
+Memgraph's Demo Applications need to showcase the live previews of different datasets in order to better represent the product's capabilities to prospective clients. 
 Use cases cover industries such as telecommunication, finance or IT network management. The demos are usually presented at meetings and on trade shows and need to be quickly developed and adjusted. 
 
 ## Research
@@ -29,7 +29,7 @@ Use cases cover industries such as telecommunication, finance or IT network mana
 We collected all the product feedback we had from meeting prospective or existing clients, looked into competitors and had co-creation workshops to define the best possible solutions for data visualization.
 We also took a deep look at competitors to see how they tackle the problem of complex graph data visualization.
 
-We laid out a customer journey based on the feedback collected from surveying early adopters and target audience.
+Together with core team, I laid out a customer journey based on the feedback collected from surveying early adopters and target audience.
 We found out that we needed to focus our efforts on users from two sides - the business side (decision makers) and technical side (developers).
 
 ![Journey mapping](/assets/img/mgr/mgr-uj.jpg)
@@ -49,7 +49,7 @@ We found out that we needed to focus our efforts on users from two sides - the b
 ### Target audience
 
 - System administrator
--  Database administrator 
+- Database administrator 
 - Data scientist 
 - C-Level Management (CTOs)
 
@@ -61,21 +61,21 @@ The first step in doing that was to identify requirements for demos and to lay o
 Main Requirements for demo applications
 - **Card Fraud Detection**
     - settings for defining transaction parameters 
-    - option to run a query, which yields the result  represented in a graph
-- **StrataData Conference Connector **
-    - show conference-related data in real-time in a graph  and make it searchable 
-    - allow real-time preview of new attendees and tweets  related to the conference during the conference
+    - option to run a query, which yields the result represented in a graph
+- **StrataData Conference Connector**
+    - show conference-related data in real-time in a graph and make it searchable 
+    - allow real-time preview of new attendees and tweets related to the conference during the conference itself
 - **Data Lineage with GitHub Commits** 
-    - run example queries on a given dataset and show   the result in a graph
+    - run example queries on a given dataset and show the result in a graph
 - **Blockchain Analysis ()Anti Money Laundering)**
-     - run example queries on a given dataset, show results  in tabular and graph mode
+     - run example queries on a given dataset, show results in tabular and graph mode
 - **Impact Analysis with NPM Packages**
      - show color-coded risk analysis of dependencies for listed packages
 
 ![Demo lo-fi wireframes](/assets/img/mgr/mgr-wf.jpg)
 *Demo low fidelity wireframes*
 
-I made detailed wireframes and flow diagrams for all five demo use-cases to serve as a reference point for testing and communication with stakeholders and developers when progressing towards development. 
+I made detailed wireframes and flow diagrams for all five demo use-cases to serve as a reference point for testing and communication with stakeholders and developers before progressing towards development. 
 Example below is for the ConConnector demo.
 
 ![ConConnector wireframes](/assets/img/mgr/mgr-cc-wf.jpg)
@@ -84,7 +84,7 @@ Example below is for the ConConnector demo.
 ## UI design
 
 Consistent UI design was imperative for all applications, to ensure smooth experience when demonstrating product capabilities.
-To achieve this, a simple Sketch library was built. Consistency also meant that modular design ensured that same components can be reused during development process.
+To achieve this, I built a simple Sketch component library. Consistency also meant that modular design ensured that same components can be reused during development process.
 
 ![UI design](/assets/img/mgr/mgr-sk.jpg)
 *Component library in Sketch for Memgraph project*
@@ -96,8 +96,8 @@ Image below shows four screens coming from different applications.
 
 ## From design to implementation
 
-After initial wireframing iterations, I was able to create a modular design with components that can be easily extended for specific needs.
-The implementation of design followed the atomic design philosophy and was served from one central place into all of the demo applications for ease of use and maintenance.
+After initial wireframing iterations, I was able to create a modular design with components that could be easily extended for specific needs.
+The implementation of design components was based on Foundation framework and was served from one central repository into all of the demo applications for ease of use and maintenance.
 
 The central design repository also consists of a simple dynamic style guide for easier implementation into future projects.
 

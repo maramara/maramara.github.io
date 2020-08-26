@@ -34,23 +34,23 @@ The focus was on small and medium-sized companies who want to cut expenses when 
 
 The competitor research revealed that there are competitors who are aiming at a global market, but few of them focus on nurturing business partnerships from start to finish.
 
-### Problems
+### Problems define
 
-- How can users stop struggling to clearly  define their business goals?
-- How to reduce manual effort of making  introductions to companies?
-- How to ensure data privacy and anonymity  levels for business?
-- How to deal with user and account  management within the business?
+- How can users stop struggling to clearly define their business goals?
+- How to reduce manual effort of making introductions to companies?
+- How to ensure data privacy and anonymity levels for business?
+- How to deal with user and account management within the business?
 
 ### Goals
 
 - Normalize data incoming from different sources into consistent dataset
-- Make the process of finding and reaching out  to companies as smooth as possible
+- Make the process of finding and reaching out to companies as smooth as possible
 
 ### Target audience
 
 - Business Owners
--  Advisors
--  Business Consultants
+- Advisors
+- Business Consultants
 
 Provisional product persona was created as an outcome of the user research and updated based on new findings.
 
@@ -58,8 +58,8 @@ Provisional product persona was created as an outcome of the user research and u
 
 ## Ideation
 
-Ideation process included generating different ideas for displaying Opportunity information, and also displaying supporting user flows that would need to change in the application.
-The wireframes for the affected areas of the application were tested and changed in several testing iterations.
+Ideation process included generating different ideas for displaying the Opportunity information, and also displaying the supporting user flows that would need to change in the application.
+The wireframes for the affected areas of the application were tested and changed in several iterations by the product manager and myself.
 
 ![Wireframes](/assets/img/plx/plx-wf.jpg)
 
@@ -79,7 +79,7 @@ The UI design followed already established look and feel of the application, wit
 
 ### Process
 
-During the course of the project, we always strived to get user feedback on the features in development. I organized on-site or remote usability screeners with prospective clients or existing users. The goal was to find the behavioral patterns in how they do business and to find platform usability pain points.
+During the course of the project, we were always striving to get user feedback on the features in development. I organized on-site or remote usability screeners with prospective clients or existing users. The goal was to find the behavioral patterns in how they do business and to find platform usability pain points.
 When it comes to feature requests or bug reports, we prioritized them based on the frequency of occurrence in feedback, as well as their gravity.
 
 ![Usability findings](/assets/img/plx/plx-ut.jpg)
