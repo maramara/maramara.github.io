@@ -33,7 +33,7 @@ This empowers me to understand and anticipate possible pain points in the design
 
 - HTML / XHTML
 - CSS / LESS / SASS
-- JavaScript (jQuery, React)
+- JavaScript
 - Bootstrap / Foundation
 - Wordpress / Jekyll
 - Git
