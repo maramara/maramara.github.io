@@ -5,6 +5,6 @@
     </a>
   </li>
   {% for item in site.data.navigation %}
-  <li><a href="{{item.url}}" alt="{{item.title}}" class="link-fancy">{{item.title}}</a></li>
+  <li><a href="{{item.url}}" class="link-fancy" {% if item.blank %} target="_blank" {% endif %}>{{item.title}}</a></li>
   {% endfor %}
 </ul>

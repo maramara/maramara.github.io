@@ -10,35 +10,4 @@ permalink: /
 I have a multidisciplinary skillset that integrates creative knowledge, human-centered design and technical expertise to facilitate design thinking. 
 This empowers me to understand and anticipate possible pain points in the design process and to deliver solutions more efficiently.
 
-### User experience
-
-- User Interviews
-- Customer Journeys
-- Empathy Maps
-- Persona Development
-- Usability Studies
-- Wireframing & Prototyping
-- Design Thinking
-- User Flows
-- Information Architecture
-
-### UI / Interaction design
-
-
-- Application Design
-- Responsive Design
-- Design Systems
-
-### UI engineering
-
-- HTML / XHTML
-- CSS / LESS / SASS
-- JavaScript
-- Bootstrap / Foundation
-- Wordpress / Jekyll
-- Git
- 
-<br>
-
-[Learn more about my process](/about/ "Process")
 

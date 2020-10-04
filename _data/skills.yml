@@ -1,0 +1,32 @@
+- title: User research
+  list:
+    - title: User interviews
+    - title: Customer journeys
+    - title: Empathy maps
+    - title: Persona development
+    - title: Usability studies
+    - title: Competitor analysis
+
+- title: UX design
+  list:
+    - title: Wireframes
+    - title: Interactive prototypes
+    - title: User flow diagrams
+    - title: Information architecture
+    - title: Content strategy
+
+- title: UI design
+  list:
+    - title: Visual design mockups
+    - title: Responsive design
+    - title: Style guides
+    - title: Design systems
+
+- title: UI engineering
+  list:
+    - title: HTML
+    - title: CSS / LESS / SASS
+    - title: JavaScript
+    - title: Bootstrap / Foundation
+    - title: Wordpress / Jekyll
+    - title: Git

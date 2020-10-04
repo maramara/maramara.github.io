@@ -75,4 +75,4 @@ Project frontend was developed by reusing existing components and styles.
 
 ## Project outcomes
 
-The beta version of the project was published on time and is freely available at [https://memgraph.com/](). 
+The beta version of the project was published on time and is freely available at [memgraph.com](https://memgraph.com). 

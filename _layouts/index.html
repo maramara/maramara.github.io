@@ -3,3 +3,21 @@ layout: default
 ---
 
 {{ content }}
+
+<br>
+<div class="grid-container" style="grid-template-columns: 1fr 1fr">
+    {% for skill in site.data.skills %}
+    <div class="grid-item">
+        <h3>{{ skill.title }}</h3>
+        <ul>
+            {% for item in skill.list %}
+            <li>{{ item.title }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>
+<br>
+<br>
+
+<a href="/about/" title="My process" class="link-fancy">Learn more about my process</a>
