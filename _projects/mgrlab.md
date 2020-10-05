@@ -8,9 +8,9 @@ order: 4
 ---
 
 | Client:		| Memgraph Ltd |
-| Deliverables:	| Design system (v1.0), Demo applications (v1.0) |
-| Time:		    | April 2017 - Oct 2018 |
-| Team:		    | Product &amp; Business dev, 4 full-stack developers |
+| Deliverables:	| Desktop & web application (v1.0) |
+| Time:		    | June 2018 - Nov 2018 |
+| Team:		    | Product &amp; Business dev, 2 full-stack developers |
 | My role:		| UX/UI Designer|
 
 ## Introduction 
