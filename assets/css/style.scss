@@ -203,7 +203,8 @@ a {
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  //grid-template-columns: auto auto auto;
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
 }
