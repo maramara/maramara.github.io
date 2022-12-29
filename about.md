@@ -1,26 +1,27 @@
 ---
 layout: about
 title: About me
-description: Designer with a background in information and communication science. 8+ years of professional experience. <br> Adaptable introvert who loves to collaborate with people.
+description: I'm an adaptable introvert who loves to collaborate with people.
 permalink: /about/
 ---
 
 ## My process
 
-I use the Design Thinking methodology as a solid background for solving problems from a human-centered perspective.
-
-Since each project has it’s unique set of problems and requirements, the methodology can be adjusted to best optimize for speed and execution. I have a solid experience in applying Design Thinking in an agile environment (in a form of 3-5 day design sprints or as half day Lean UX workshops).
-
-I approach projects by:   
-  
-- **Conducting research** to understand the users better (competitor analysis,  user interview, persona, customer journey) 
-- **Forming user stories** & ideating on possible solutions (iterative process)     
-- **Validating potential solutions** (mostly through wireframes and clickable prototypes)     
-- **Implementing successful solutions** into distinct components of the UI that can  be reused     
-- **Tracking the success of the solution** by gathering feedback (user acceptance tests, usability studies)
+I truly believe that everyone is a designer—they just might need a bit of help to shape their ideas into something great. This is where I see my role—as a designer, it's my job to steer people towards a shared understanding of the problem and to explore different options in a collaborative and transparent way.
 
 In my work, I strive to:     
 
-- Make and document data-informed decisions     
+- Make and document data-informed decisions
+- Share knowledge and mentor people    
 - Be a critical thinker     
 - Be a good communicator
+
+I approach projects by:   
+  
+- **Conducting research** to understand the user and business needs better 
+- **Identifying opportunities** and ideating on possible solutions
+- **Validating potential solutions** internally and externally (user feedback sessions, wireframes, clickable prototypes)     
+- **Implementing successful solutions** by breaking down designs into reusable UI components    
+- **Tracking the success of the solution** by gathering qualitative and quantitative feedback (user acceptance tests, usability studies, data tracking)
+
+

@@ -6,6 +6,7 @@
     - title: Persona development
     - title: Usability studies
     - title: Competitor analysis
+    - title: Jobs To Be Done
 
 - title: UX design
   list:
@@ -17,16 +18,17 @@
 
 - title: UI design
   list:
-    - title: Visual design mockups
-    - title: Responsive design
+    - title: Visual design
+    - title: Responsiveness
     - title: Style guides
     - title: Design systems
+    - title: UI animations
 
 - title: UI engineering
   list:
     - title: HTML
-    - title: CSS / LESS / SASS
+    - title: CSS/LESS/SASS
     - title: JavaScript
-    - title: Bootstrap / Foundation
-    - title: Wordpress / Jekyll
+    - title: Bootstrap/Foundation
+    - title: Wordpress/Jekyll
     - title: Git

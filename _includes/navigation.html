@@ -1,10 +1,11 @@
 <ul class="menu">
   <li>
-    <a href="/" title="Home" class="link-fancy" style="padding-bottom: 0.3rem;">
+    <a href="/" title="Home" class="link-fancy {% if page.url == '/' %}active{% endif %}" style="padding-bottom: 0.3rem;">
       <img alt="Marija Stupar - Logo" src="/assets/img/logo.svg" width="34" height="36" />
     </a>
   </li>
+  {% assign url = page.url|remove:'index.html' %}
   {% for item in site.data.navigation %}
-  <li><a href="{{item.url}}" class="link-fancy" {% if item.blank %} target="_blank" {% endif %}>{{item.title}}</a></li>
+  <li><a href="{{item.url}}" class="link-fancy {% if page.url == item.url %}active{% endif %}" {% if item.blank %} target="_blank" {% endif %}>{{item.title}}</a></li>
   {% endfor %}
 </ul>
