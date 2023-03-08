@@ -51,31 +51,5 @@
                 href="https://pages.github.com" target="_blank">GitHub Pages</a>!</span>
     </footer>
 </main>
-<script>
-    const gradient = document.getElementById('gradient');
-
-    // Generating default random values
-    const getRandomColor = () => {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    };
-
-    const getRandomIntFromRange = (min, max) => {
-        return Math.random() * (max - min) + min;
-    };
-
-    // Setting initial values
-    var randomDirection = getRandomIntFromRange(45, 90);
-    var randomMid = getRandomIntFromRange(40, 60);
-    var randomColor1 = getRandomColor();
-    var randomColor2 = getRandomColor();
-    var randomColor3 = getRandomColor();
-
-    gradient.style.backgroundImage = `linear-gradient(${randomDirection}deg, ${randomColor1} 0%, ${randomColor2} ${randomMid}%, ${randomColor3} 100%)`;
-</script>
 </body>
 </html>

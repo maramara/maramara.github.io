@@ -13,23 +13,27 @@
 
 // Imports
 @import "{{ site.theme }}";
-@import url('https://fonts.googleapis.com/css?family=Petrona:wght@300;900');
+//@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap');
 @import "fontello.css";
 
 
 // 2. VARIABLES
 
 // Headers
-$header-bg-color: #DD2476;
-$header-bg-color-secondary: #FF512F;
+$header-bg-color: #da48a2;
+$header-bg-color-secondary: #3be1d8;
+
+//linear-gradient(119deg, #f558b5 0%, #fd3c96 9%, #3cf6ed 100%)
+//linear-gradient(56.1407deg, rgb(70, 203, 38) 0%, rgb(60, 121, 178) 50%, rgb(215, 89, 98) 100%)
 
 // Text
 $section-headings-color: #2B2C2E;
 $body-text-color: #2B2C2E;
 $body-link-color: #031326;
 $blockquote-text-color: #EEB709 !default;
-$body-font: "Petrona", Helvetica, Arial, sans-serif;
-$heading-font: "Petrona", Helvetica, Arial, sans-serif;
+$body-font: "Barlow", Helvetica, Arial, sans-serif;
+$heading-font: "Barlow", Helvetica, Arial, sans-serif;
 
 // Borders
 $border-color: #E5E5E5;
@@ -71,8 +75,8 @@ a {
 }
 
 .page-header {
-  background-image: linear-gradient($header-bg-color, $header-bg-color-secondary);
-  animation: gradient 20s ease infinite;
+  background-image: linear-gradient(45deg, $header-bg-color, $header-bg-color-secondary);
+  animation: gradient 15s ease infinite;
   background-size: 300% 100%;
   padding: 5rem 2rem;
   text-shadow: 0 0 16px rgba(0,0,0,0.15);
@@ -103,6 +107,7 @@ a {
     a {
       padding: 1rem;
       display: inline-block;
+      font-weight: 500;
 
       [class|="icon"] {
         font-size: 1.4rem;
@@ -117,7 +122,7 @@ a {
   h1, h2, h3, h4, h5, h6 {
     color: $section-headings-color;
     font-family: $heading-font;
-    font-weight: 900;
+    font-weight: 500;
   }
 
   p img { // markdown weirdness
@@ -188,11 +193,13 @@ a {
   &:hover, &.active {
     color: darken($body-link-color, 10%);
     text-decoration: none;
-
     &::after {
-      height: 2px;
+      height: 3px;
       opacity: 1;
       @include translateY(0px);
+      background-image: linear-gradient(45deg, $header-bg-color, $header-bg-color-secondary);
+      animation: gradient 15s ease infinite;
+      background-size: 300% 100%;
     }
   }
 }

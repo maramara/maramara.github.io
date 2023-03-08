@@ -1,10 +1,18 @@
 - title: LinkedIn
   url: "https://www.linkedin.com/in/marstupa/"
-  icon: icon-linkedin
+  icon: icon-linkedin-squared
 
 - title: Behance
   url: "https://www.behance.net/marstupa"
   icon: icon-behance
+
+- title: Figma Community
+  url: "https://www.figma.com/@marstupa"
+  icon: icon-figma
+
+- title: CodePen
+  url: "https://codepen.io/maramaramara"
+  icon: icon-codepen
 
 - title: Twitter
   url: "https://twitter.com/marstupa"
