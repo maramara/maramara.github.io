@@ -7,7 +7,8 @@ permalink: /about/
 
 ## My process
 
-As a designer, my aim is to steer people towards a shared understanding of the problem, and to explore options in a collaborative and transparent way with my product and engineering counterparts.
+As a designer, my aim is to steer people towards a shared understanding of the problem, and to explore options in a 
+collaborative and transparent way with my product and engineering counterparts.
 
 In my work, I strive to:     
 
@@ -18,5 +19,5 @@ In my work, I strive to: 
 I approach projects by:   
   
 - Conducting research to understand the user and business context 
-- Identifying opportunities and ideating on possible solutions
+- Identifying opportunities, ideating, and iterating on possible solutions
 - Validating potential solutions and tracking their success over time
