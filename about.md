@@ -1,14 +1,14 @@
 ---
 layout: about
 title: About me
-description: I'm an adaptable introvert who loves to collaborate with people.
+description: In pursuit of great solutions through collaboration.
 permalink: /about/
 ---
 
 ## My process
 
 As a designer, my aim is to steer people towards a shared understanding of the problem, and to explore options in a 
-collaborative and transparent way with my product and engineering counterparts.
+collaborative and transparent way with my product and engineering counterparts. I'm curious by nature and don't shy away from asking quetions.
 
 In my work, I strive to:     
 

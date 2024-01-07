@@ -1,4 +1,4 @@
-- title: User research
+- title: User Research
   list:
     - title: User interviews
     - title: Customer journeys
@@ -6,17 +6,19 @@
     - title: Persona development
     - title: Usability studies
     - title: Competitor analysis
-    - title: Jobs To Be Done
+    - title: Jobs-to-be-done
 
-- title: UX design
+- title: Product Design
   list:
+    - title: Discovery
+    - title: Workshop Facilitation
     - title: Wireframes
     - title: Interactive prototypes
     - title: User flow diagrams
     - title: Information architecture
     - title: Content strategy
 
-- title: UI design
+- title: UI Design
   list:
     - title: Visual design
     - title: Responsiveness
@@ -24,11 +26,9 @@
     - title: Design systems
     - title: UI animations
 
-- title: UI engineering
+- title: UI Engineering
   list:
     - title: HTML
     - title: CSS/LESS/SASS
     - title: JavaScript
-    - title: Bootstrap/Foundation
-    - title: Wordpress/Jekyll
     - title: Git
