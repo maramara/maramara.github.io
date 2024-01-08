@@ -15,7 +15,7 @@ order: 1
 
 ## Background
 
-Sauce Labs is a software testing company that enables businesses to confidently ship their software. Customers can test their projects using a vast number of desktop and mobile devices, as well as types of tests. The company has made a series of acquisitions in recent years, with one of them focusing on visual testing.*
+Sauce Labs is a software testing company that enables businesses to confidently ship their software. Customers can test their projects using a vast number of desktop and mobile devices, as well as types of tests. The company has made a series of acquisitions in recent years, with one of them focusing on visual testing.[*](#glossary)
 
 This kind of solution primarily targets software engineers and QA testers, but can also include less technical users (such as us designers!) as reviewers. The job that these users want to get done is simple: 
 
@@ -126,7 +126,7 @@ Our team was distributed across Europe and North America, which meant we had to 
 
 The team was very dedicated, collaborative, and open for feedback. We were able to achieve a high level of UX maturity in our work. Team members would regularly be included in customer calls, and I could trust the FE engineers to independently make great interaction improvements.
 
-## * Glossary
+## Glossary
 All of this is a bit of a nerdy topic, so here are some terms for better understanding:
 - Visual testing – a type of testing where the system automatically checks the visual appearance and behavior of a user interface by comparing an image snapshot against some approved baseline
 - Component testing - a type of visual testing where the system automatically checks isolated components of a design system (like Storybook components)

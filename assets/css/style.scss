@@ -30,7 +30,7 @@ $header-bg-color-secondary: #FB4B37;
 // Text
 $section-headings-color: #2B2C2E;
 $body-text-color: #2B2C2E;
-$body-link-color: #031326;
+$body-link-color: #d74032;
 $blockquote-text-color: #EEB709 !default;
 $body-font: "Barlow", Helvetica, Arial, sans-serif;
 $heading-font: "Barlow", Helvetica, Arial, sans-serif;
@@ -70,7 +70,6 @@ body {
 
 a {
   color: $body-link-color;
-  text-decoration: underline;
   &:hover {
     color: $header-bg-color-secondary;
   }
