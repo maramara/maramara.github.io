@@ -2,8 +2,8 @@
 layout: project-page
 title: Sauce Labs
 description: Increasing platform use with visual testing
-thumbnail: /assets/img/sl/img-sl.jpg
-image: /assets/img/plx/head-sl.png
+thumbnail: /assets/img/sl/img-slvt.jpg
+image: /assets/img/sl/head-slvt.png
 order: 1
 ---
 
@@ -84,6 +84,10 @@ The MVP was open for Beta at the start of September, and relied on a simple imag
 - The page to display a list of test builds that have run
 - A carousel overview of all the test snapshots contained within one build, with the option to compare and accept or reject changes found (complete with keyboard shortcuts!)
 
+![The MVP UI](/assets/img/sl/slvt-0.jpg)
+
+![Toolbar actions](/assets/img/sl/slvt-5.jpg)
+
 The Beta release helped us to catch many inconsistencies and bugs in the snapshot engine. Our main findings up to this point were:
 - The integrated solution where users could run visual and end-to-end tests together resonated with customers, and the vast majority saw that as an advantage.
 - For tests at scale, it was hard to easily find and manage the snapshots that caused test failures. We needed a more robust overview of the data within the Build.
@@ -96,6 +100,9 @@ The Beta release helped us to catch many inconsistencies and bugs in the snapsho
 Because the users were not willing to use the product in full during Beta, we did not collect enough usage data to confirm whether the tool would scale well. The (lack of) such feedback was a push to internally explore scalability behaviors, and along with that, we dove deeper into the component testing.
 
 The resulting change introduced the component testing option for the web and an in-between page that showed Build details. On that page, users could search, filter, and group snapshots as needed. The end result is here (also available as a Figma prototype)
+
+![Build details with filters](/assets/img/sl/slvt-3.jpg)
+![Snapshot review with updated navigation and toolbar](/assets/img/sl/slvt-4.jpg)
 
 ## Results
 

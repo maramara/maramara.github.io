@@ -1,7 +1,7 @@
 ---
 layout: project-page
 title: Memgraph 
-description: How to sell value of a design system
+description: Building demo applications to help GTM motion
 thumbnail: /assets/img/mgr/img-mgr.jpg
 image: /assets/img/mgr/head-mgr.png
 order: 3
