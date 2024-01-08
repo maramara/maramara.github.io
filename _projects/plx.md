@@ -10,7 +10,7 @@ order: 1
 | Client:		| CB Alliance / Powerlinx Ltd |
 | Deliverables:	| Product application (v2.0) |
 | Time:		    | Jan 2016 - Aug 2016 |
-| Team:		    | Product manager, 2 marketing &amp; content managers, 5 developers |
+| Team:		    | Product manager, 2 marketing &amp; content managers, 5 engineers |
 | My role:		| UX&amp;UI Designer, Front-End (HTML/SCSS) |
 
 ## Introduction 

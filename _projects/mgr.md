@@ -1,7 +1,7 @@
 ---
 layout: project-page
 title: Memgraph 
-description: Introducing a design system for quicker application development
+description: How to sell value of a design system
 thumbnail: /assets/img/mgr/img-mgr.jpg
 image: /assets/img/mgr/head-mgr.png
 order: 3
@@ -10,8 +10,8 @@ order: 3
 | Client:		| Memgraph Ltd |
 | Deliverables:	| Design system (v1.0), Demo applications (v1.0) |
 | Time:		    | Dec 2017 - Feb 2018 |
-| Team:		    | Product &amp; Business dev, 2 full-stack developers |
-| My role:		| UX/UI Designer, UI Engineer  (Foundation SCSS, Jekyll) |
+| Team:		    | Product &amp; Business dev, 2 full-stack engineers |
+| My role:		| UX/UI Designer, UI Engineer (Foundation SCSS, Jekyll) |
 
 ## Introduction 
 
@@ -33,6 +33,7 @@ Together with core team, I laid out a customer journey based on the feedback col
 We found out that we needed to focus our efforts on users from two sides - the business side (decision makers) and technical side (developers).
 
 ![Journey mapping](/assets/img/mgr/mgr-uj.jpg)
+
 *Journey mapping*
 
 ### Problems

@@ -22,7 +22,7 @@
 
 // Headers
 $header-bg-color: #da48a2;
-$header-bg-color-secondary: #3be1d8;
+$header-bg-color-secondary: #FB4B37;
 
 //linear-gradient(119deg, #f558b5 0%, #fd3c96 9%, #3cf6ed 100%)
 //linear-gradient(56.1407deg, rgb(70, 203, 38) 0%, rgb(60, 121, 178) 50%, rgb(215, 89, 98) 100%)
@@ -40,7 +40,7 @@ $border-color: #E5E5E5;
 $hr-border-color: #E5E5E5;
 
 // Custom
-$box-shadow-default: 2px 2px 1rem 0 rgba(0, 0, 0, .2);
+$box-shadow-default: 0px 2px 1px 0 rgba(0, 0, 0, 0.15);
 
 
 // 3. MIXINS
@@ -65,6 +65,7 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   color: $body-text-color;
+  background: radial-gradient(at bottom left, #f5f5f5, #fff);
 }
 
 a {
@@ -204,6 +205,25 @@ a {
   }
 }
 
+.button-fancy {
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  background-image: linear-gradient(45deg, $header-bg-color, $header-bg-color-secondary);
+  animation: gradient 10s ease infinite;
+  background-size: 300% 100%;
+  box-shadow: $box-shadow-default;
+  @include translateY(0px);
+  @include transition(-webkit-transform 0.05s);
+  &:hover, &:active {
+    @include translateY(1px);
+    text-decoration: none;
+    box-shadow: none;
+  }
+}
+
 .text-center {
   text-align: center;
 }
@@ -218,10 +238,17 @@ a {
 
 .grid-item {
   background-color: #fff;
-  border-radius: 2px;
+  border-radius: 20px;
+  border: 1px solid #f5f5f5;
   box-shadow: $box-shadow-default;
   padding: 1.5rem;
   overflow: hidden;
+
+  img, h3 {
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+  }
 }
 
 @keyframes gradient {

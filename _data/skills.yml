@@ -1,4 +1,5 @@
 - title: User Research
+  icon: /assets/img/icn-res.svg
   list:
     - title: User interviews
     - title: Customer journeys
@@ -9,9 +10,10 @@
     - title: Jobs-to-be-done
 
 - title: Product Design
+  icon: /assets/img/icn-pd.svg
   list:
     - title: Discovery
-    - title: Workshop Facilitation
+    - title: Workshop facilitation
     - title: Wireframes
     - title: Interactive prototypes
     - title: User flow diagrams
@@ -19,6 +21,7 @@
     - title: Content strategy
 
 - title: UI Design
+  icon: /assets/img/icn-ui.svg
   list:
     - title: Visual design
     - title: Responsiveness
@@ -27,6 +30,7 @@
     - title: UI animations
 
 - title: UI Engineering
+  icon: /assets/img/icn-uie.svg
   list:
     - title: HTML
     - title: CSS/LESS/SASS

@@ -1,7 +1,7 @@
 ---
 layout: project-page
-title: Memgraph
-description: Designing Memgraph Lab - an application for querying data
+title: Memgraph Lab
+description: Designing a solution for querying data
 thumbnail: /assets/img/mgrlab/img-mgrlab.jpg
 image: /assets/img/mgrlab/head-mgrlab.png
 order: 4
@@ -10,7 +10,7 @@ order: 4
 | Client:		| Memgraph Ltd |
 | Deliverables:	| Desktop & web application (v1.0) |
 | Time:		    | June 2018 - Nov 2018 |
-| Team:		    | Product &amp; Business dev, 2 full-stack developers |
+| Team:		    | Product &amp; Business dev, 2 full-stack engineers |
 | My role:		| UX/UI Designer|
 
 ## Introduction 
@@ -21,7 +21,7 @@ It is engineered to support the needs of enterprises with colossal amounts of da
 
 ## Problem space
 
-The product was expanding beyond terminal and needed to create an application that provides a visual user interface to manipulate graph database data.
+The product was expanding beyond purely CLI use and needed to create an application that provides a graphical user interface to manipulate graph database data.
 
 ## Research
 

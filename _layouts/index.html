@@ -8,6 +8,7 @@ layout: default
 <div class="grid-container">
     {% for skill in site.data.skills %}
     <div class="grid-item">
+        <img src="{{ skill.icon }}" />
         <h3>{{ skill.title }}</h3>
         <ul>
             {% for item in skill.list %}
@@ -20,4 +21,4 @@ layout: default
 <br>
 <br>
 
-<a href="/about/" title="My process" class="link-fancy">Learn more about my process</a>
+<a href="/projects/" title="Case Studies" class="button-fancy">View Case Studies</a>

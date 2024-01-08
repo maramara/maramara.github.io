@@ -1,7 +1,7 @@
 ---
 layout: project-page
 title: Bunch.ai
-description: Product discovery and redesign
+description: Finding product market fit for an early-stage idea
 thumbnail: /assets/img/bun/img-bun.jpg
 image: /assets/img/bun/head-bun.png
 order: 2
