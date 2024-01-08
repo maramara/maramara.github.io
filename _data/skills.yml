@@ -33,6 +33,6 @@
   icon: /assets/img/icn-uie.svg
   list:
     - title: HTML
-    - title: CSS/LESS/SASS
-    - title: JavaScript
-    - title: Git
+    - title: CSS/SASS
+    - title: JavaScript, React
+    - title: Git, Jekyll
