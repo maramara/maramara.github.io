@@ -1,4 +1,5 @@
 - title: Tools I love
+  icon: /assets/img/icn-tools.svg
   list:
     - title: Pen & Paper
     - title: Figma & Miro
@@ -7,6 +8,7 @@
     - title: Maze & User Interviews
 
 - title: Workstyle
+  icon: /assets/img/icn-workstyle.svg
   list:
     - title: Adaptive
     - title: Collaborative
@@ -14,6 +16,7 @@
     - title: Principled
 
 - title: Personality
+  icon: /assets/img/icn-person.svg
   list:
     - title: Introverted
     - title: Intuitive
@@ -21,6 +24,7 @@
     - title: Perceiving
 
 - title: Things I enjoy
+  icon: /assets/img/icn-sun.svg
   list:
     - title: Green tea
     - title: Sunny weather

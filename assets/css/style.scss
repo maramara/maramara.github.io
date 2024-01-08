@@ -210,17 +210,21 @@ a {
   border-radius: 2rem;
   font-weight: bold;
   color: #fff;
-  display: inline-block;
+  display: block;
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
   background-image: linear-gradient(45deg, $header-bg-color, $header-bg-color-secondary);
   animation: gradient 10s ease infinite;
   background-size: 300% 100%;
   box-shadow: $box-shadow-default;
   @include translateY(0px);
-  @include transition(-webkit-transform 0.05s);
+  @include transition(opacity, -webkit-transform 0.05s);
   &:hover, &:active {
     @include translateY(1px);
     text-decoration: none;
     box-shadow: none;
+    opacity: 0.97;
   }
 }
 
