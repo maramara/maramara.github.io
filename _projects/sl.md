@@ -99,7 +99,7 @@ The Beta release helped us to catch many inconsistencies and bugs in the snapsho
 
 Because the users were not willing to use the product in full during Beta, we did not collect enough usage data to confirm whether the tool would scale well. The (lack of) such feedback was a push to internally explore scalability behaviors, and along with that, we dove deeper into the component testing.
 
-The resulting change introduced the component testing option for the web and an in-between page that showed Build details. On that page, users could search, filter, and group snapshots as needed. The end result is here (also available as a Figma prototype)
+The resulting change introduced the component testing option for the web and an in-between page that showed Build details. On that page, users could search, filter, and group snapshots as needed. The end result is here - also available as a [Figma prototype](https://www.figma.com/proto/6L2SwIBKl0GSsjYEJUojII/Prototypes?page-id=0%3A1&type=design&node-id=1-3524&viewport=397%2C399%2C0.07&t=7LtR4Gj1lJt2TtN4-1&scaling=scale-down-width&starting-point-node-id=1%3A3524&hide-ui=1).
 
 ![Build details with filters](/assets/img/sl/slvt-3.jpg)
 ![Snapshot review with updated navigation and toolbar](/assets/img/sl/slvt-4.jpg)
