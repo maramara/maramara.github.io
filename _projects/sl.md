@@ -11,7 +11,7 @@ order: 1
 | Deliverables:	| Product application MVP |
 | Time:		    | May 2023 - present |
 | Team:		    | Product manager, Tech Lead, 4 engineers |
-| My role:		| UX&amp;UI Designer, Front-End (HTML/SCSS) |
+| My role:		| Product Design, Research |
 
 ## Background
 
