@@ -9,7 +9,7 @@ order: 5
 
 | Client:		| dunnhumby Media |
 | Deliverables:	| dh Audiences application (v1.0) |
-| Time:		    | Sep 2019 - Ongoing |
+| Time:		    | Sep 2019 - Mar 2020 |
 | Team:		    | Product manager, UI designer, Engineering manager, 2 engineers |
 | My role:		| User Research, UX/UI Design |
 
