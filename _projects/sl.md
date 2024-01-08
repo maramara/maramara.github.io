@@ -126,6 +126,13 @@ Our team was distributed across Europe and North America, which meant we had to 
 
 The team was very dedicated, collaborative, and open for feedback. We were able to achieve a high level of UX maturity in our work. Team members would regularly be included in customer calls, and I could trust the FE engineers to independently make great interaction improvements.
 
+## * Glossary
+All of this is a bit of a nerdy topic, so here are some terms for better understanding:
+- Visual testing – a type of testing where the system automatically checks the visual appearance and behavior of a user interface by comparing an image snapshot against some approved baseline
+- Component testing - a type of visual testing where the system automatically checks isolated components of a design system (like Storybook components)
+- End-to-end testing - a type of testing that verifies the functionality and performance of an entire software application from start to finish by simulating real-world user scenarios and replicating live data
+- Web testing - any kind of testing done on a website of a web app
+- Mobile app testing - any kind of testing done on a native mobile application app
 
 
 
