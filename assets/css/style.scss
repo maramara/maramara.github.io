@@ -13,10 +13,12 @@
 
 // Imports
 @import "{{ site.theme }}";
-//@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Yeseva+One&display=swap');@import "fontello.css";
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=PT+Sans&display=swap');
 @import "fontello.css";
-
 
 // 2. VARIABLES
 
@@ -24,23 +26,21 @@
 $header-bg-color: #da48a2;
 $header-bg-color-secondary: #FB4B37;
 
-//linear-gradient(119deg, #f558b5 0%, #fd3c96 9%, #3cf6ed 100%)
-//linear-gradient(56.1407deg, rgb(70, 203, 38) 0%, rgb(60, 121, 178) 50%, rgb(215, 89, 98) 100%)
-
 // Text
 $section-headings-color: #2B2C2E;
 $body-text-color: #2B2C2E;
-$body-link-color: #d74032;
+$body-link-color: #2B2C2E;
 $blockquote-text-color: #EEB709 !default;
-$body-font: "Barlow", Helvetica, Arial, sans-serif;
-$heading-font: "Barlow", Helvetica, Arial, sans-serif;
+$body-font: "PT Sans", Helvetica, Arial, sans-serif;
+$heading-font: "Antonio", Helvetica, Arial, sans-serif;
 
 // Borders
 $border-color: #E5E5E5;
 $hr-border-color: #E5E5E5;
 
 // Custom
-$box-shadow-default: 0px 2px 1px 0 rgba(0, 0, 0, 0.15);
+$box-shadow-default: 0px 1px 10px 0 rgba(0, 0, 0, 0.15);
+$gradient: linear-gradient(90deg, #FDF8E8 0%, #F6CFE1 50.5%, #FCC0BC 100%);
 
 
 // 3. MIXINS
@@ -63,9 +63,11 @@ $box-shadow-default: 0px 2px 1px 0 rgba(0, 0, 0, 0.15);
 body {
   font-family: $body-font;
   font-weight: 300;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   color: $body-text-color;
-  background: radial-gradient(at bottom left, #f5f5f5, #fff);
+  background: no-repeat top right url('../img/bg-img.jpg');
+  position: relative;
 }
 
 a {
@@ -75,23 +77,53 @@ a {
   }
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font;
+  letter-spacing: -2px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.5rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.8rem;
+}
+h5 {
+  font-size: 2.5rem;
+}
+h6 {
+  font-size: 2rem;
+}
+
 .page-header {
-  background-image: linear-gradient(45deg, $header-bg-color, $header-bg-color-secondary);
-  animation: gradient 15s ease infinite;
-  background-size: 300% 100%;
+  //background-image: linear-gradient(45deg, $header-bg-color, $header-bg-color-secondary);
+  background: none;
+  //animation: gradient 15s ease infinite;
+  //background-size: 300% 100%;
   padding: 5rem 2rem;
-  text-shadow: 0 0 16px rgba(0,0,0,0.15);
 
   .project-name, .project-tagline {
     max-width: 1000px;
     margin: 1rem auto;
+    font-family: $heading-font;
+    font-size: 5rem;
+    color: $body-text-color;
   }
 
   .project-tagline {
-    opacity: 0.9;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-family: $body-font;
+    letter-spacing: 0;
+    color: $body-text-color;
+    opacity: 0.85;
     &.small {
-      font-size: 1rem;
+      font-size: 1.3rem;
     }
   }
 }
@@ -107,8 +139,10 @@ a {
 
     a {
       padding: 1rem;
+      font-size: 1.3rem;
       display: inline-block;
-      font-weight: 500;
+      font-family: $heading-font;
+      color: $body-text-color;
 
       [class|="icon"] {
         font-size: 1.4rem;
@@ -122,24 +156,24 @@ a {
 
   h1, h2, h3, h4, h5, h6 {
     color: $section-headings-color;
-    font-family: $heading-font;
-    font-weight: 500;
   }
 
-  p img { // markdown weirdness
-    border: 6px solid #fff;
-    border-radius: 3px;
+  p img {
+    border-radius: 6px;
     box-shadow: $box-shadow-default;
   }
 
   table {
     display: table;
     font-size: 80%;
-    font-weight: bold;
 
     td:first-child {
       width: 140px;
     }
+  }
+
+  p a {
+    color: $header-bg-color-secondary;
   }
 }
 
@@ -150,10 +184,6 @@ a {
   .site-footer-credits {
     display: inline-block;
     margin-top: 2rem;
-  }
-
-  a {
-    color: $body-text-color;
   }
 }
 
@@ -174,7 +204,7 @@ a {
   position: relative;
   &::after {
     content: "*";
-    color: #ffff00;
+    color: $header-bg-color-secondary;
   }
 }
 
@@ -189,7 +219,7 @@ a {
     left: 0;
     width: 100%;
     height: 1px;
-    background: $body-link-color;
+    background: $header-bg-color-secondary;
     content: '';
     opacity: 0;
     @include transition(height 0.3s, opacity 0.3s, -webkit-transform 0.3s);
@@ -197,31 +227,26 @@ a {
   }
 
   &:hover, &.active {
-    color: darken($body-link-color, 10%);
     text-decoration: none;
     &::after {
       height: 3px;
       opacity: 1;
       @include translateY(0px);
-      background-image: linear-gradient(45deg, $header-bg-color, $header-bg-color-secondary);
-      animation: gradient 15s ease infinite;
-      background-size: 300% 100%;
     }
   }
 }
 
 .button-fancy {
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   border-radius: 2rem;
-  font-weight: bold;
-  color: #fff;
+  font-family: $heading-font;
+  font-size: 1.3rem;
   display: block;
   text-align: center;
   max-width: 280px;
   margin: 0 auto;
-  background-image: linear-gradient(45deg, $header-bg-color, $header-bg-color-secondary);
-  animation: gradient 6s ease infinite;
-  background-size: 300% 100%;
+  background: $gradient;
+  border: 1px solid $body-text-color;
   box-shadow: $box-shadow-default;
   @include translateY(0px);
   @include transition(opacity, -webkit-transform 0.05s);
@@ -240,24 +265,27 @@ a {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  //grid-template-columns: auto auto auto;
   grid-column-gap: 1.5rem;
   grid-row-gap: 1.5rem;
 }
 
 .grid-item {
   background-color: #fff;
-  border-radius: 20px;
-  border: 1px solid #f5f5f5;
-  box-shadow: $box-shadow-default;
   padding: 1.5rem;
-  overflow: hidden;
+  border: 12px double #fce1e6;
+  border-radius: 50px;
+  border-bottom-style: solid;
 
   img, h3 {
     display: block;
     margin: 1rem auto;
     text-align: center;
   }
+}
+
+.profile-img {
+  float: left;
+  margin-left: 15%;
 }
 
 @keyframes gradient {

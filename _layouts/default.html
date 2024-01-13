@@ -30,6 +30,10 @@
 {% include navigation.html %}
 
 <header class="page-header" role="banner" id="gradient">
+
+    {% if page.url == "/about/" %}
+    <img alt="Profile photo" src="/assets/img/img-profile.png" class="profile-img" />
+    {% endif %}
     <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
 
     {% if page.description %}
@@ -47,7 +51,7 @@
     <footer class="site-footer text-center">
         {% include social.html %}
 
-        <span class="site-footer-credits text-small">Lovingly crafted in Berlin by Marija herself</span>
+        <span class="site-footer-credits text-small">Lovingly crafted in Berlin by Marija</span>
     </footer>
 </main>
 </body>
