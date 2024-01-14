@@ -39,7 +39,7 @@ $border-color: #E5E5E5;
 $hr-border-color: #E5E5E5;
 
 // Custom
-$box-shadow-default: 0px 1px 10px 0 rgba(0, 0, 0, 0.15);
+$box-shadow-default: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
 $gradient: linear-gradient(90deg, #FDF8E8 0%, #F6CFE1 50.5%, #FCC0BC 100%);
 
 
@@ -102,10 +102,7 @@ h6 {
 }
 
 .page-header {
-  //background-image: linear-gradient(45deg, $header-bg-color, $header-bg-color-secondary);
   background: none;
-  //animation: gradient 15s ease infinite;
-  //background-size: 300% 100%;
   padding: 5rem 2rem;
 
   .project-name, .project-tagline {
@@ -288,14 +285,22 @@ h6 {
   margin-left: 15%;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.staticrypt-page {
+  border-radius: 20px;
+}
+
+.staticrypt-form .staticrypt-decrypt-button {
+  text-transform: initial !important;
+  background: $header-bg-color-secondary !important;
+}
+
+.staticrypt-form .staticrypt-decrypt-button:hover,
+.staticrypt-form .staticrypt-decrypt-button:active,
+.staticrypt-form .staticrypt-decrypt-button:focus {
+  background: $header-bg-color-secondary !important;
+}
+
+.staticrypt-content {
+  background: $gradient !important;
+  font-family: $body-font, sans-serif !important;
 }
