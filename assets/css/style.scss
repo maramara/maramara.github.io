@@ -149,14 +149,15 @@ h6 {
 }
 
 .main-content {
-  margin-top: 3rem;
+  margin-top: 2rem;
+  max-width:72rem;
 
   h1, h2, h3, h4, h5, h6 {
     color: $section-headings-color;
   }
 
-  p img {
-    border-radius: 6px;
+  p img, .img-thumb {
+    border-radius: 10px;
     box-shadow: $box-shadow-default;
   }
 
@@ -171,6 +172,13 @@ h6 {
 
   p a {
     color: $header-bg-color-secondary;
+  }
+}
+
+.thumb-clickable {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.008);
   }
 }
 
@@ -285,22 +293,66 @@ h6 {
   margin-left: 15%;
 }
 
-.staticrypt-page {
-  border-radius: 20px;
+// Work examples grid
+.work-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.staticrypt-form .staticrypt-decrypt-button {
-  text-transform: initial !important;
-  background: $header-bg-color-secondary !important;
+@media (max-width: 580px) {
+  .work-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
 }
 
-.staticrypt-form .staticrypt-decrypt-button:hover,
-.staticrypt-form .staticrypt-decrypt-button:active,
-.staticrypt-form .staticrypt-decrypt-button:focus {
-  background: $header-bg-color-secondary !important;
+.work-container > * {
+  border-radius: 1.5rem;
 }
 
-.staticrypt-content {
-  background: $gradient !important;
-  font-family: $body-font, sans-serif !important;
+@media (min-width: 580px) {
+  .item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .item-2 {
+    grid-column-start: 3;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .item-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: end;
+  }
+
+  .item-4 {
+    grid-column-start: 2;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .item-5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: end;
+  }
+
+  .item-6 {
+    grid-column-start: 3;
+    grid-column-end: end;
+    grid-row-start: 3;
+    grid-row-end: end;
+  }
 }

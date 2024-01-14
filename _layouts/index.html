@@ -1,7 +1,17 @@
 ---
 layout: default
 ---
+<div class="work-container">
+    {% for item in site.data.work %}
+    <img src="{{ item.img }}" alt="{{ item.title }}" class="{{ item.class }}" />
+    {% endfor %}
+</div>
 
+<a href="/projects/" title="Case Studies" class="button-fancy">View my Case Studies</a>
+<br>
+<br>
+<hr>
+<br>
 {{ content }}
 
 <br>
@@ -20,5 +30,6 @@ layout: default
 </div>
 <br>
 <br>
+<a href="/about/" title="About me" class="button-fancy">More about me</a>
 
-<a href="/projects/" title="Case Studies" class="button-fancy">View my Case Studies</a>
+
