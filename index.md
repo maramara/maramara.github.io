@@ -6,7 +6,6 @@ permalink: /
 ---
 
 ## What I do
- I have a background in information and communication science. I bring to the table a multidisciplinary skillset that integrates creative knowledge, human-centered design, and technical expertise. 
- I am able to facilitate design process with cross-functional teams and across business value streams. 
- 
- I also like to play with some CSS. 
+With a background in information and communication science, I offer a multidisciplinary skillset that seamlessly integrates creativity, human-centered design, and technical expertise.
+
+I guide cross-functional teams in uncovering the root of problems through effective discovery sessions. Through mentorship and collaborative efforts, I consistently strive for design excellence.
