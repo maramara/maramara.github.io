@@ -3,7 +3,7 @@ layout: project-page
 title: Sauce Labs
 description: Increasing platform use with visual testing
 thumbnail: /assets/img/work/work-desktop.jpg
-image: /assets/img/sl/head-slvt.png
+image: /assets/img/slvt/head-slvt.png
 order: 6
 ---
 
@@ -52,7 +52,7 @@ With that knowledge, we decided that our **MVP would be focusing on the web**. W
 
 The team met for a project kick-off in June where we discussed the problem space in depth and outlined user stories. We pulled up our well-known Sauce Labs personas and pieced together the knowledge and assumptions around their potential use of Visual testing. This helped everyone to get a shared understanding of the problem space, user needs, and pain points.
 
-![User stories](/assets/img/sl/action1.jpg)
+![User stories](/assets/img/slvt/action1.jpg)
 
 The outcome was a set of user stories, prioritized based on the current knowledge of the business needs, development journeys, and the issues previously identified by the acquisition. 
 During the process, we uncovered many detailed assumptions, risks, and open questions, which I used to craft a research plan for us.
@@ -68,13 +68,13 @@ We decided that secondary and adjacent target users can be prioritized later (th
 ### Research and validation
 After these exercises, I assembled the nuggets from our foundational research and prepared an opportunity tree, which we used as a place to map and prioritize the problems we discovered. This was used in the early days of crafting our MVP, and as the product matured, we moved to a more widely used convention of collecting customer feedback through ProductBoard.
 
-![Opportunity tree](/assets/img/sl/action2.jpg)
+![Opportunity tree](/assets/img/slvt/action2.jpg)
 
 With all this knowledge collected, our next step was to ideate on and validate the potential flows and use cases that our MVP should contain. For that, I facilitated a couple of in-person sessions with the team where we ideated on potential solutions using a whiteboard. We also looked closely at a couple of our competitors such as Percy or Aplitools to see how we could differentiate. After that, I would switch to Figma to design user flows using our design system so that we could validate them in user interviews with customers (this is where the research plan came in handy).
 
 We needed feedback on the initial user flows that we imagined, to confirm if they are enough for engineers to use the tool with success. At that time our product lead decided to assemble a dedicated communication channel for a Beta group of users, which helped us immensely to get quality feedback and iterate quickly.
 
-![Opportunity tree](/assets/img/sl/action3.jpg)
+![Opportunity tree](/assets/img/slvt/action3.jpg)
 
 You must be wondering by now what the MVP solution looked like.
 
@@ -84,9 +84,9 @@ The MVP was open for Beta at the start of September, and relied on a simple imag
 - The page to display a list of test builds that have run
 - A carousel overview of all the test snapshots contained within one build, with the option to compare and accept or reject changes found (complete with keyboard shortcuts!)
 
-![The MVP UI](/assets/img/sl/slvt-0.jpg)
+![The MVP UI](/assets/img/slvt/slvt-0.jpg)
 
-![Toolbar actions](/assets/img/sl/slvt-5.jpg)
+![Toolbar actions](/assets/img/slvt/slvt-5.jpg)
 
 The Beta release helped us to catch many inconsistencies and bugs in the snapshot engine. Our main findings up to this point were:
 - The integrated solution where users could run visual and end-to-end tests together resonated with customers, and the vast majority saw that as an advantage.
@@ -101,8 +101,8 @@ Because the users were not willing to use the product in full during Beta, we di
 
 The resulting change introduced the component testing option for the web and an in-between page that showed Build details. On that page, users could search, filter, and group snapshots as needed. The end result is here - also available as a [Figma prototype](https://www.figma.com/proto/6L2SwIBKl0GSsjYEJUojII/Prototypes?page-id=0%3A1&type=design&node-id=1-3524&viewport=397%2C399%2C0.07&t=7LtR4Gj1lJt2TtN4-1&scaling=scale-down-width&starting-point-node-id=1%3A3524&hide-ui=1).
 
-![Build details with filters](/assets/img/sl/slvt-3.jpg)
-![Snapshot review with updated navigation and toolbar](/assets/img/sl/slvt-4.jpg)
+![Build details with filters](/assets/img/slvt/slvt-3.jpg)
+![Snapshot review with updated navigation and toolbar](/assets/img/slvt/slvt-4.jpg)
 
 ## Results
 
@@ -122,7 +122,7 @@ Our team was distributed across Europe and North America, which meant we had to 
 - A Beta tester group that the whole team had access to, for facilitating feedback around product, engineering, or design topics
 - Figma for ideation, developer handoff, and for async collaboration
 
-<img src="/assets/img/sl/wow.jpg" alt="Ways of working" width="330">
+<img src="/assets/img/slvt/wow.jpg" alt="Ways of working" width="330">
 
 The team was very dedicated, collaborative, and open for feedback. We were able to achieve a high level of UX maturity in our work. Team members would regularly be included in customer calls, and I could trust the FE engineers to independently make great interaction improvements.
 

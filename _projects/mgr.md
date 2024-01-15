@@ -74,6 +74,7 @@ Main Requirements for demo applications
      - show color-coded risk analysis of dependencies for listed packages
 
 ![Demo lo-fi wireframes](/assets/img/mgr/mgr-wf.jpg)
+
 *Demo low fidelity wireframes*
 
 I made detailed wireframes and flow diagrams for all five demo use-cases to serve as a reference point for testing and communication with stakeholders and developers before progressing towards development. 

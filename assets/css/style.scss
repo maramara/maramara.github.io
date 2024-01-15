@@ -166,7 +166,7 @@ a {
     }
   }
 
-  p a {
+  p a, li a {
     color: darken($header-bg-color-secondary, 20%);
     &:hover {
       color: $header-bg-color-secondary;
