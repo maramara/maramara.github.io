@@ -121,29 +121,6 @@ a {
   }
 }
 
-.menu {
-  padding-left: 0;
-  margin: 0 0 2px;
-
-  li {
-    display: inline-block;
-    list-style-type: none;
-    vertical-align: bottom;
-
-    a {
-      padding: 1rem;
-      font-size: 1.3rem;
-      display: inline-block;
-      font-family: $heading-font;
-      color: $body-text-color;
-
-      [class|="icon"] {
-        font-size: 1.4rem;
-      }
-    }
-  }
-}
-
 .main-content {
   margin-top: 2rem;
   max-width:72rem;
@@ -179,6 +156,29 @@ a {
   }
 }
 
+.menu {
+  padding-left: 0;
+  margin: 0 0 2px;
+
+  li {
+    display: inline-block;
+    list-style-type: none;
+    vertical-align: bottom;
+
+    a {
+      padding: 1rem;
+      font-size: 1.3rem;
+      display: inline-block;
+      font-family: $heading-font;
+      color: $body-text-color;
+
+      [class|="icon"] {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
 .thumb-clickable {
   transition: all 0.2s ease-in-out;
   &:hover {
@@ -193,6 +193,10 @@ a {
   .site-footer-credits {
     display: inline-block;
     margin-top: 2rem;
+  }
+
+  .menu li a {
+    color: $body-text-color;
   }
 }
 
