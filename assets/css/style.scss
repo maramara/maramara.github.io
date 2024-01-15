@@ -36,7 +36,6 @@ $heading-font: "Antonio", Helvetica, Arial, sans-serif;
 
 // Borders
 $border-color: #E5E5E5;
-$hr-border-color: #E5E5E5;
 
 // Custom
 $box-shadow-default: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
@@ -157,7 +156,7 @@ h6 {
   }
 
   p img, .img-thumb {
-    border-radius: 10px;
+    border-radius: 1rem;
     box-shadow: $box-shadow-default;
   }
 
@@ -172,6 +171,11 @@ h6 {
 
   p a {
     color: $header-bg-color-secondary;
+  }
+
+  hr {
+    background: $border-color;
+    margin: 3rem 0;
   }
 }
 

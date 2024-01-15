@@ -4,3 +4,27 @@ layout: default
 
 {{ content }}
 
+<div class="grid-container" style="grid-template-columns: 1fr">
+    {% assign sorted = site.projects | sort: 'order' | reverse %}
+
+    {% for project in sorted %}
+    <div class="grid-item text-center">
+        <img src="{{ project.thumbnail}}" alt="{{ project.title }}" width="100%" class="img-thumb">
+        <h3><a href="{{ project.url }}">{{ project.description }}</a></h3>
+        <p>{{ project.title }}</p>
+    </div>
+    {% endfor %}
+
+</div>
+
+<hr>
+
+<h6 class="text-center">Other work</h6>
+<div class="grid-container" id="thumbnailContainer" style="grid-template-columns: 1fr 1fr 1fr; max-width: 100%">
+    {% for item in site.data.work-community %}
+    <a href="{{ item.url }}" target="_blank">
+        <img alt="{{ item.title }}" src="{{ item.img }}" class="img-thumb thumb-clickable"/>
+    </a>
+    {% endfor %}
+</div>
+

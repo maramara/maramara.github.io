@@ -2,9 +2,9 @@
 layout: project-page
 title: Sauce Labs
 description: Increasing platform use with visual testing
-thumbnail: /assets/img/sl/img-slvt.jpg
+thumbnail: /assets/img/work/work-desktop.jpg
 image: /assets/img/sl/head-slvt.png
-order: 1
+order: 6
 ---
 
 | Client:		| Sauce Labs |

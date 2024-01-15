@@ -2,7 +2,7 @@
 layout: project-page
 title: Memgraph 
 description: Building demo applications to help GTM motion
-thumbnail: /assets/img/mgr/img-mgr.jpg
+thumbnail: /assets/img/mgr/demo-conf.jpg
 image: /assets/img/mgr/head-mgr.png
 order: 3
 ---
@@ -90,9 +90,15 @@ To achieve this, I built a simple Sketch component library. Consistency also mea
 ![UI design](/assets/img/mgr/mgr-sk.jpg)
 *Component library in Sketch for Memgraph project*
 
-Image below shows four screens coming from different applications.
+Images below show four screens coming from different demo applications, while using shared components.
 
-![UI design](/assets/img/mgr/mgr-ui.jpg)
+![UI design](/assets/img/mgr/mgr-ui-1.jpg)
+
+![UI design](/assets/img/mgr/mgr-ui-2.jpg)
+
+![UI design](/assets/img/mgr/mgr-ui-3.jpg)
+
+![UI design](/assets/img/mgr/mgr-ui-4.jpg)
 *Memgraph demo applications - UI*
 
 ## From design to implementation
@@ -111,3 +117,6 @@ The central design repository also consists of a simple dynamic style guide for 
 - Since the demo applications are internal tools and we don't track the usual analytics on them, the benefits are measured quantitatively through a set of general business KPIs such as lead generation rate
 - The ConConnector demo has proved to be a very successful tool for lead generation during the Strata Data Conference because of it's real-time experience
 - The “show, don’t tell” approach saved time and increased engagement when presenting Memgraph to prospective clients or investors
+
+![Conconnector in action](/assets/img/mgr/demo-conf.jpg)
+*Conconnector in action by cofounder Marko*
