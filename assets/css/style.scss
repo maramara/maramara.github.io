@@ -36,7 +36,6 @@ $heading-font: "Antonio", Helvetica, Arial, sans-serif;
 
 // Borders
 $border-color: #E5E5E5;
-$hr-border-color: #E5E5E5;
 
 // Custom
 $box-shadow-default: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
@@ -70,13 +69,6 @@ body {
   position: relative;
 }
 
-a {
-  color: $body-link-color;
-  &:hover {
-    color: $header-bg-color-secondary;
-  }
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
   letter-spacing: -2px;
@@ -99,6 +91,10 @@ h5 {
 }
 h6 {
   font-size: 2rem;
+}
+
+a {
+  color: $body-link-color;
 }
 
 .page-header {
@@ -125,6 +121,41 @@ h6 {
   }
 }
 
+.main-content {
+  margin-top: 2rem;
+  max-width:72rem;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $section-headings-color;
+  }
+
+  p img, .img-thumb {
+    border-radius: 1rem;
+    box-shadow: $box-shadow-default;
+  }
+
+  table {
+    display: table;
+    font-size: 80%;
+
+    td:first-child {
+      width: 140px;
+    }
+  }
+
+  p a, li a {
+    color: darken($header-bg-color-secondary, 20%);
+    &:hover {
+      color: $header-bg-color-secondary;
+    }
+  }
+
+  hr {
+    background: $border-color;
+    margin: 3rem 0;
+  }
+}
+
 .menu {
   padding-left: 0;
   margin: 0 0 2px;
@@ -148,33 +179,6 @@ h6 {
   }
 }
 
-.main-content {
-  margin-top: 2rem;
-  max-width:72rem;
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $section-headings-color;
-  }
-
-  p img, .img-thumb {
-    border-radius: 10px;
-    box-shadow: $box-shadow-default;
-  }
-
-  table {
-    display: table;
-    font-size: 80%;
-
-    td:first-child {
-      width: 140px;
-    }
-  }
-
-  p a {
-    color: $header-bg-color-secondary;
-  }
-}
-
 .thumb-clickable {
   transition: all 0.2s ease-in-out;
   &:hover {
@@ -189,6 +193,10 @@ h6 {
   .site-footer-credits {
     display: inline-block;
     margin-top: 2rem;
+  }
+
+  .menu li a {
+    color: $body-text-color;
   }
 }
 
@@ -252,6 +260,7 @@ h6 {
   margin: 0 auto;
   background: $gradient;
   border: 1px solid $body-text-color;
+  color: $body-link-color;
   box-shadow: $box-shadow-default;
   @include translateY(0px);
   @include transition(opacity, -webkit-transform 0.05s);

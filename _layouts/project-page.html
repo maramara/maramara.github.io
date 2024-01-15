@@ -11,7 +11,7 @@ layout: default
     <br>
     <hr>
 
-    <h3><span class="icon-heart"></span> Check out my other projects:</h3>
+    <h3><span class="icon-heart"></span> Check out my other case studies:</h3>
     {% assign sorted = site.projects | sort: 'order' | reverse %}
     <ul>
         {% for project in sorted %}
@@ -21,4 +21,5 @@ layout: default
         {% endfor %}
     </ul>
 
-<!--    <a href="/projects/" title="All projects" class="link-fancy">Back to all projects</a>-->
+    <br>
+    <a href="/projects/" title="All projects" class="button-fancy">Back to projects</a>
