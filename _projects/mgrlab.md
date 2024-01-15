@@ -70,9 +70,15 @@ UI design of the application follows the [previously established](/projects/mgr/
 In two iterations, there were adjustments to the statistics on the dashboard (based on user feedback) and top navigation was removed since this is a desktop application. 
 Project frontend was developed by reusing existing components and styles.
 
-![Memgraph Lab UI](/assets/img/mgrlab/mgrlab-ui.jpg)
+![Memgraph Lab UI - Login](/assets/img/mgrlab/mgrlab-ui-1.jpg)
+
+![Memgraph Lab UI - Dashboard](/assets/img/mgrlab/mgrlab-ui-2.jpg)
+
+![Memgraph Lab UI - Map query](/assets/img/mgrlab/mgrlab-ui-3.jpg)
+
+![Memgraph Lab UI - Query debug](/assets/img/mgrlab/mgrlab-ui-4.jpg)
 *Memgraph Lab UI*
 
 ## Project outcomes
 
-The beta version of the project was published on time and is freely available at [memgraph.com](https://memgraph.com). 
+The project's beta was published within the desired timeframe, and a newer version is freely available at [memgraph.com](https://memgraph.com). 

@@ -69,13 +69,6 @@ body {
   position: relative;
 }
 
-a {
-  color: $body-link-color;
-  &:hover {
-    color: $header-bg-color-secondary;
-  }
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font;
   letter-spacing: -2px;
@@ -98,6 +91,10 @@ h5 {
 }
 h6 {
   font-size: 2rem;
+}
+
+a {
+  color: $body-link-color;
 }
 
 .page-header {
@@ -170,7 +167,10 @@ h6 {
   }
 
   p a {
-    color: $header-bg-color-secondary;
+    color: darken($header-bg-color-secondary, 20%);
+    &:hover {
+      color: $header-bg-color-secondary;
+    }
   }
 
   hr {
@@ -256,6 +256,7 @@ h6 {
   margin: 0 auto;
   background: $gradient;
   border: 1px solid $body-text-color;
+  color: $body-link-color;
   box-shadow: $box-shadow-default;
   @include translateY(0px);
   @include transition(opacity, -webkit-transform 0.05s);

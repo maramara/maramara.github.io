@@ -2,7 +2,7 @@
 layout: project-page
 title: dunnhumby Media
 description: Discovery for the in-house use product 
-thumbnail: /assets/img/aud/aud-ui.png
+thumbnail: /assets/img/aud/img-aud.jpg
 image: /assets/img/aud/head-aud.png
 order: 5
 ---
@@ -82,10 +82,16 @@ Together with product manager, we defined high level requirements to design spec
 We designed a low fidelity prototype and ran usability tests with around 15 users in two iterations. The sessions were run remotely and conducted by us two designers and our product manager to ensure we always have two people attending the session. 
 This helped to decide on the final set of requirements for the MVP, and enabled the UX team to start thinking about the UI design.
 
-The design produced for the project relied on previously established global dunnhumby UI guidelines, but also introduced some new improvements such as new side navigation, step wizard and fluid grid layout.
+The design produced for the project relied on previously established global [dunnhumby UI guidelines](https://medium.com/dunnhumby-data-science-engineering/learnings-from-building-a-design-system-79c8d7e770c6) which I was a maintainer of, but we also introduced some new improvements such as new side navigation, step wizard and fluid grid layout.
 The development for the project relied on using the in-house component library which needed to be updated to accommodate all the changes that were required.
 
-![UI design](/assets/img/aud/aud-ui.png)
+![UI design - Dashboard](/assets/img/aud/aud-ui-1.jpg)
+
+![UI design - Audience details](/assets/img/aud/aud-ui-2.jpg)
+
+![UI design - Creating audience](/assets/img/aud/aud-ui-3.jpg)
+
+![UI design - Modal dialog](/assets/img/aud/aud-ui-4.jpg)
 *UI design of Audiences product*
 
 ## Project outcomes
