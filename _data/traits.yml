@@ -3,9 +3,9 @@
   list:
     - title: Pen & Paper
     - title: Figma & Miro
-    - title: Miro & Overflow
     - title: Mixpanel & Looker
     - title: Maze & User Interviews
+    - title: Talking to people
 
 - title: Workstyle
   icon: /assets/img/icn-workstyle.svg
