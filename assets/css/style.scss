@@ -154,6 +154,28 @@ a {
     background: $border-color;
     margin: 3rem 0;
   }
+
+  hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium $border-color;
+    color: $border-color;
+    text-align: center;
+  }
+  hr:after {
+    content: "• • •";
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+  }
+}
+
+ul li {
+  margin-bottom: 8px;
 }
 
 .menu {
@@ -309,9 +331,14 @@ a {
 }
 
 @media (max-width: 580px) {
-  .work-container {
-    grid-template-columns: 1fr;
+  .work-container, .grid-container {
+    grid-template-columns: 1fr !important;
     grid-template-rows: auto;
+  }
+
+  .site-footer .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
