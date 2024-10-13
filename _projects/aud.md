@@ -1,7 +1,7 @@
 ---
 layout: project-page
 title: dunnhumby Media
-description: Discovery for the in-house use product 
+description: Discovery for building an in-house use product 
 thumbnail: /assets/img/aud/img-aud.jpg
 image: /assets/img/aud/head-aud.png
 order: 5
