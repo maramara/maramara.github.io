@@ -1,24 +1,33 @@
 ---
 layout: default
 ---
-<div class="work-container">
-    {% for item in site.data.work %}
-    <img src="{{ item.img }}" alt="{{ item.title }}" class="{{ item.class }}" />
-    {% endfor %}
-</div>
+<h2>Selected case studies</h2>
+<p><a href="mailto:marija.stupar@gmail.com">Contact me</a> to find out more.</p>
 
-<a href="/projects/" title="Case Studies" class="button-fancy">View case studies</a>
+<div class="grid-container" style="grid-template-columns: 1fr; max-width: 100%">
+
+    {% assign sorted = site.projects | sort: 'order' | reverse %}
+
+    {% for project in sorted %}
+    <div class="grid-item text-center">
+        <img src="{{ project.thumbnail}}" alt="{{ project.title }}" width="100%" class="img-thumb">
+        <h6>{{ project.description }}</h6>
+<!--        <h4><a href="{{ project.url }}">{{ project.description }}</a></h4>-->
+        <p>{{ project.title }}</p>
+    </div>
+    {% endfor %}
+
+</div>
 
 <hr>
 
 {{ content }}
 
-<br>
 <div class="grid-container">
     {% for skill in site.data.skills %}
     <div class="grid-item">
-        <img src="{{ skill.icon }}" />
-        <h3>{{ skill.title }}</h3>
+<!--        <img src="{{ skill.icon }}" />-->
+        <h6>{{ skill.title }}</h6>
         <ul>
             {% for item in skill.list %}
             <li>{{ item.title }}</li>
@@ -28,7 +37,13 @@ layout: default
     {% endfor %}
 </div>
 <br>
-<br>
-<a href="/about/" title="About me" class="button-fancy">More about me</a>
+<hr>
 
-
+<h6 class="text-center">Find my work elsewhere</h6>
+<div class="grid-container" id="thumbnailContainer" style="grid-template-columns: 1fr 1fr 1fr; max-width: 100%">
+    {% for item in site.data.work-community %}
+    <a href="{{ item.url }}" target="_blank">
+        <img alt="{{ item.title }}" src="{{ item.img }}" class="img-thumb thumb-clickable"/>
+    </a>
+    {% endfor %}
+</div>

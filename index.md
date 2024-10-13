@@ -1,11 +1,12 @@
 ---
 layout: index
 title: Simplifying things since 2012
-description: "Hello! I'm <span class='highlighted'>Marija</span>, a Berlin-based product designer who loves to focus on designing and developing valuable, consistent, and user-centered solutions within the B2B space. Currently, I'm creating magic as a Principal Product Designer at Sauce Labs."
+description: "Hello! I'm <span class='highlighted'>Marija</span>, a Berlin-based product designer who loves to focus on designing and developing valuable, consistent, and user-centered solutions."
 permalink: /
 ---
 
 ## What I do
-With a background in information and communication science, I offer a multidisciplinary skillset that seamlessly integrates creativity, human-centered design, and technical expertise.
+With a background in information and communication science, I specialize in translating business objectives into user-centered design solutions that drive measurable results.
 
-I guide cross-functional teams in uncovering the root of problems through effective discovery sessions. Through mentorship and collaborative efforts, I consistently strive for design excellence.
+I lead cross-functional teams to identify key problems and create solutions that enhance user experience, boost engagement, and support business growth. 
+Sometimes, I <a target="_blank" href="https://medium.com/@marstupa">write about design</a> or <a target="_blank" href="https://codepen.io/maramaramara/pens/public">tinker with CSS art</a>.

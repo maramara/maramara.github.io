@@ -1,38 +1,26 @@
+- title: Business Impact
+  icon: /assets/img/icn-res.svg
+  list:
+    - title: Proven track record of increasing user satisfaction and reducing friction in B2B SaaS domain
+    - title: Aligning design initiatives with business objectives to maximize ROI
+    - title: Enhancing cross-functional collaboration to deliver products on time and on budget
+
 - title: User Research
   icon: /assets/img/icn-res.svg
   list:
-    - title: User interviews
-    - title: Customer journeys
-    - title: Empathy maps
-    - title: Persona development
-    - title: Usability studies
-    - title: Competitor analysis
-    - title: Jobs-to-be-done
+    - title: Shaping strategies based on deep user insights to drive product and design vision
+    - title: Identifying pain points and opportunities that drive product innovation for multiple verticals
+    - title: Uncovering critical journeys that translate to improved customer experience
 
 - title: Product Design
-  icon: /assets/img/icn-pd.svg
+  icon: /assets/img/icn-res.svg
   list:
-    - title: Discovery
-    - title: Workshop facilitation
-    - title: Wireframes
-    - title: Interactive prototypes
-    - title: User flow diagrams
-    - title: Information architecture
-    - title: Content strategy
+    - title: Leading discovery sessions to uncover business needs and drive product direction
+    - title: Developing clear, actionable prototypes and user flows that streamline decision-making
+    - title: Crafting information architecture and content strategies that enhance usability and scalability
 
 - title: UI Design
-  icon: /assets/img/icn-ui.svg
+  icon: /assets/img/icn-res.svg
   list:
-    - title: Visual design
-    - title: Responsiveness
-    - title: Style guides
-    - title: Design systems
-    - title: UI animations
-
-- title: UI Engineering
-  icon: /assets/img/icn-uie.svg
-  list:
-    - title: HTML
-    - title: CSS/SASS
-    - title: JavaScript, React
-    - title: Git, Jekyll
+    - title: Delivering visually compelling and responsive interfaces that improve user engagement
+    - title: Establishing design systems that drive brand consistency and efficiency across products

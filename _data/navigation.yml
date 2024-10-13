@@ -1,9 +1,16 @@
-- title: Projects
-  url: /projects/
+- id: main-nav
+  items:
+    - title: Writing
+      url: https://medium.com/@marstupa
+      blank: true
 
-- title: About
-  url: /about/
+- id: theme-nav
+  items:
+    - title: 90s
+      id: theme-90s
+    - title: 00s
+      id: theme-00s
+    - title: Now
+      id: theme-20s
 
-- title: Writing
-  url: https://medium.com/@marstupa
-  blank: true
+
