@@ -1,33 +1,19 @@
-<!-- Main Navigation -->
-<!--<nav class="menu" id="main-navigation">-->
-<!--  <ul>-->
-<!--    <li>-->
-<!--      <a href="/" title="Home" class="link-fancy {% if page.url == '/' %}active{% endif %}" style="padding-bottom: 0.3rem;">-->
-<!--        <img alt="Marija Stupar - Logo" src="/assets/img/logo.svg" width="34" height="36" />-->
-<!--      </a>-->
-<!--    </li>-->
-<!--    {% assign main_nav = site.data.navigation | where: 'id', 'main-nav' %}-->
-<!--    {% for item in main_nav[0].items %}-->
-<!--    <li>-->
-<!--      <a href="{{ item.url }}" class="link-fancy {% if page.url == item.url %}active{% endif %}" {% if item.blank %}target="_blank"{% endif %}>-->
-<!--        {{ item.title }}-->
-<!--      </a>-->
-<!--    </li>-->
-<!--    {% endfor %}-->
-<!--  </ul>-->
-<!--</nav>-->
-
 <!-- Theme Navigation -->
-<!--<nav class="menu" id="theme-navigation">-->
-<!--  <ul>-->
-<!--    <li>Choose your theme:</li>-->
-<!--    {% assign theme_nav = site.data.navigation | where: 'id', 'theme-nav' %}-->
-<!--    {% for item in theme_nav[0].items %}-->
-<!--    <li>-->
-<!--      <a href="#{{ item.id }}" class="{{ item.id }} {% if page.url == item.url %}active{% endif %}">-->
-<!--        {{ item.title }}-->
-<!--      </a>-->
-<!--    </li>-->
-<!--    {% endfor %}-->
-<!--  </ul>-->
-<!--</nav>-->
+<nav class="menu" id="theme-navigation">
+  <ul>
+    <li>Theme:</li>
+    {% assign theme_nav = site.data.navigation | where: 'id', 'theme-nav' %}
+
+    {% for item in theme_nav[0].items %}
+    <li>
+      <a href="#{{ item.id }}" data-theme="{{ item.id }}">
+        {{ item.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+<!--todo: add active class if nav item is selected-->
+
+

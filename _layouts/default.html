@@ -52,5 +52,63 @@
         {% include social.html %}
     </footer>
 </main>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all theme navigation links
+        var themeLinks = document.querySelectorAll('#theme-navigation a');
+
+        // Function to set the theme class on the body
+        function setTheme(theme) {
+            // Remove existing theme classes from the body
+            document.body.classList.forEach(function(className) {
+                if (className.startsWith('theme-')) {
+                    document.body.classList.remove(className);
+                }
+            });
+
+            // Add the new theme class to the body
+            if (theme) {
+                document.body.classList.add(theme);
+            }
+        }
+
+        // Function to set the active class on the clicked nav item
+        function setActiveLink(theme) {
+            // Remove active class from all nav items
+            themeLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+
+            // Find the link with the matching theme and add the active class
+            var activeLink = document.querySelector(`#theme-navigation a[data-theme="${theme}"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+            }
+        }
+
+        // Check for saved theme in localStorage and apply it
+        var savedTheme = localStorage.getItem('selectedTheme');
+        if (savedTheme) {
+            setTheme(savedTheme);
+            setActiveLink(savedTheme);
+        }
+
+        // Add event listeners to each link to save the theme on click and set active class
+        themeLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+                event.preventDefault();
+
+                var theme = this.getAttribute('data-theme');
+                // Set and save the selected theme
+                setTheme(theme);
+                setActiveLink(theme);
+                localStorage.setItem('selectedTheme', theme);
+            });
+        });
+    });
+
+</script>
 </body>
 </html>

@@ -12,27 +12,22 @@
 // 1. IMPORTS
 
 // Imports
-@import "{{ site.theme }}";
-//@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Yeseva+One&display=swap');@import "fontello.css";
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "fontello.css";
 
 // 2. VARIABLES
 
 // Headers
-$header-bg-color: #da48a2;
-$header-bg-color-secondary: #FB4B37;
+//$header-bg-color: #da48a2;
+//$header-bg-color-secondary: #FB4B37;
 
 // Text
-$section-headings-color: #2B2C2E;
-$body-text-color: #2B2C2E;
-$body-link-color: #2B2C2E;
-$blockquote-text-color: #EEB709 !default;
-$body-font: "PT Sans", Helvetica, Arial, sans-serif;
-$heading-font: "Antonio", Helvetica, Arial, sans-serif;
+//$section-headings-color: #2B2C2E;
+//$body-text-color: #2B2C2E;
+//$body-link-color: #2B2C2E;
+//$blockquote-text-color: #EEB709 !default;
+//$body-font: "PT Sans", Helvetica, Arial, sans-serif;
+//$heading-font: "Antonio", Helvetica, Arial, sans-serif;
 
 // Borders
 $border-color: #E5E5E5;
@@ -60,25 +55,16 @@ $gradient: linear-gradient(90deg, #FDF8E8 0%, #F6CFE1 50.5%, #FCC0BC 100%);
 // 4. THEME OVERRIDES
 
 body {
-  font-family: $body-font;
   font-weight: 300;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  color: $body-text-color;
-  background: no-repeat top right url('../img/bg-img.jpg');
-  position: relative;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-font;
-  letter-spacing: -2px;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
 h2 {
-  font-size: 3.5rem;
+  font-size: 3.4rem;
 }
 h3 {
   font-size: 3rem;
@@ -94,7 +80,7 @@ h6 {
 }
 
 a {
-  color: $body-link-color;
+  text-decoration: none;
 }
 
 .page-header {
@@ -104,16 +90,12 @@ a {
   .project-name, .project-tagline {
     max-width: 1000px;
     margin: 1rem auto;
-    font-family: $heading-font;
     font-size: 5rem;
-    color: $body-text-color;
   }
 
   .project-tagline {
     font-size: 1.7rem;
-    font-family: $body-font;
     letter-spacing: 0;
-    color: $body-text-color;
     opacity: 0.85;
     &.small {
       font-size: 1.3rem;
@@ -122,12 +104,8 @@ a {
 }
 
 .main-content {
-  margin-top: 2rem;
-  max-width:72rem;
-
-  h1, h2, h3, h4, h5, h6 {
-    color: $section-headings-color;
-  }
+  max-width: 1000px;
+  margin: 1rem auto;
 
   p img, .img-thumb {
     border-radius: 1rem;
@@ -143,21 +121,10 @@ a {
     }
   }
 
-  p a, li a {
-    color: darken($header-bg-color-secondary, 20%);
-    &:hover {
-      color: $header-bg-color-secondary;
-    }
-  }
-
-  hr {
-    background: $border-color;
-    margin: 3rem 0;
-  }
-
   hr {
     overflow: visible; /* For IE */
     padding: 0;
+    margin: 3rem 0;
     border: none;
     border-top: medium $border-color;
     color: $border-color;
@@ -179,23 +146,21 @@ ul li {
 }
 
 .menu {
-  padding-left: 0;
-  margin: 0 0 2px;
+  display: grid;
+  justify-content: center;
 
-  li {
-    display: inline-block;
-    list-style-type: none;
-    vertical-align: bottom;
-
-    a {
-      padding: 1rem;
-      font-size: 1.3rem;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
       display: inline-block;
-      font-family: $heading-font;
-      color: $body-text-color;
+      list-style-type: none;
+      vertical-align: bottom;
 
-      [class|="icon"] {
-        font-size: 1.4rem;
+      a {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.3rem;
+        display: inline-block;
       }
     }
   }
@@ -216,10 +181,6 @@ ul li {
     display: inline-block;
     margin-top: 2rem;
   }
-
-  .menu li a {
-    color: $body-text-color;
-  }
 }
 
 
@@ -239,12 +200,10 @@ ul li {
   position: relative;
   &::after {
     content: "*";
-    color: $header-bg-color-secondary;
   }
 }
 
 .link-fancy {
-  color: $body-link-color;
   text-decoration: none;
   position: relative;
 
@@ -254,7 +213,6 @@ ul li {
     left: 0;
     width: 100%;
     height: 1px;
-    background: $header-bg-color-secondary;
     content: '';
     opacity: 0;
     @include transition(height 0.3s, opacity 0.3s, -webkit-transform 0.3s);
@@ -274,15 +232,14 @@ ul li {
 .button-fancy {
   padding: 1rem;
   border-radius: 2rem;
-  font-family: $heading-font;
   font-size: 1.3rem;
   display: block;
   text-align: center;
   max-width: 280px;
   margin: 0 auto;
   background: $gradient;
-  border: 1px solid $body-text-color;
-  color: $body-link-color;
+  border: 1px solid pink;
+  color: pink;
   box-shadow: $box-shadow-default;
   @include translateY(0px);
   @include transition(opacity, -webkit-transform 0.05s);
@@ -306,7 +263,6 @@ ul li {
 }
 
 .grid-item {
-  background-color: #fff;
   padding: 1.5rem;
 
   img, h3 {
@@ -316,18 +272,13 @@ ul li {
   }
 }
 
-.profile-img {
-  float: left;
-  margin-left: 15%;
-}
-
 // Work examples grid
 .work-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr auto 1fr;
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 580px) {
@@ -387,5 +338,46 @@ ul li {
     grid-column-end: end;
     grid-row-start: 3;
     grid-row-end: end;
+  }
+}
+
+// 90s weirdness with basic styles and odd table layouts
+.theme-90s {
+  background: navy;
+  cursor:url(../img/cursor.gif), auto;
+  * {
+    font-family: "Times New Roman", serif !important;
+    border-radius: 0 !important;
+    color: white;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .menu li a.active {
+    color: yellow;
+  }
+}
+
+// Bootstrap-like theme
+.theme-00s {
+  * {
+    font-family: "Open Sans", sans-serif !important;
+    border-radius: 4px !important;
+  }
+  .menu li a.active {
+    background: #468CC7;
+    color: #fff;
+  }
+}
+
+// Whatever we call what's in Today. Inter, really.
+.theme-20s {
+  background: #E5C5D6;
+
+  * {
+    font-family: Inter, sans-serif !important;
+    color: #261253 !important;
   }
 }
