@@ -1,56 +1,41 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: 'en-US' }}">
 <head>
-
     {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', '{{ site.google_analytics }}');
     </script>
     {% endif %}
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicon.png">
-
     {% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google-site-verification" content="IzPGM6Wu4GKbua5PpXYHBZnq2gQ9idyE5ZlEpaLG6mM" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 </head>
 <body>
+    <div class="site-wrapper">
+        <header class="site-header">
+            <h1 class="site-title">{{ page.title | default: site.title }}</h1>
+            {% if page.description %}
+            <p class="site-tagline">{{ page.description }}</p>
+            {% endif %}
+            {% if page.hint %}
+            <p class="site-hint">{{ page.hint }}</p>
+            {% endif %}
+        </header>
 
-{% include navigation.html %}
+        <main class="main-content">
+            {{ content }}
+        </main>
 
-<header class="page-header" role="banner" id="gradient">
-
-    {% if page.url == "/about/" %}
-    <img alt="Profile photo" src="/assets/img/img-profile.png" class="profile-img" />
-    {% endif %}
-    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-
-    {% if page.description %}
-    <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline
-        }}</h2>
-    {% endif %}
-    {% if page.url == "/" %}
-    <p class="project-tagline small"><span class="highlighted"></span> The "j" is silent (:</p>
-    {% endif %}
-</header>
-
-<main id="content" class="main-content" role="main">
-    {{ content }}
-
-    <footer class="site-footer text-center">
-        {% include social.html %}
-    </footer>
-</main>
+        <footer class="site-footer">
+            {% include social.html %}
+        </footer>
+    </div>
 </body>
 </html>

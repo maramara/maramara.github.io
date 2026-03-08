@@ -1,391 +1,460 @@
 ---
 ---
 
-// Well hello again! Here's what's in this file:
-// 1. Imports
-// 2. Variables
-// 3. Mixins
-// 4. Theme overrides (Cayman)
-// 5. Custom classes
-
+// Custom theme — no external dependencies
 
 // 1. IMPORTS
-
-// Imports
-@import "{{ site.theme }}";
-//@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;500&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans&display=swap');
-//@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Yeseva+One&display=swap');@import "fontello.css";
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=PT+Sans&display=swap');
 @import "fontello.css";
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=PT+Sans:wght@400;700&display=swap');
 
 // 2. VARIABLES
+$color-text: #1a1a1a;
+$color-text-muted: #555;
+$color-accent: #da48a2;
+$color-accent-secondary: #FB4B37;
+$color-border: #e5e5e5;
+$color-bg: #fff;
 
-// Headers
-$header-bg-color: #da48a2;
-$header-bg-color-secondary: #FB4B37;
+$font-body: "PT Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-heading: "Antonio", -apple-system, sans-serif;
 
-// Text
-$section-headings-color: #2B2C2E;
-$body-text-color: #2B2C2E;
-$body-link-color: #2B2C2E;
-$blockquote-text-color: #EEB709 !default;
-$body-font: "PT Sans", Helvetica, Arial, sans-serif;
-$heading-font: "Antonio", Helvetica, Arial, sans-serif;
+$max-width: 860px;
+$box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+$radius: 0.75rem;
 
-// Borders
-$border-color: #E5E5E5;
-
-// Custom
-$box-shadow-default: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
-$gradient: linear-gradient(90deg, #FDF8E8 0%, #F6CFE1 50.5%, #FCC0BC 100%);
-
-
-// 3. MIXINS
-
-@mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  transition: $args;
+// 3. RESET & BASE
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@mixin translateY($px) {
-  -webkit-transform: translateY($px);
-  -moz-transform: translateY($px);
-  transform: translateY($px);
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
-
-
-// 4. THEME OVERRIDES
 
 body {
-  font-family: $body-font;
-  font-weight: 300;
-  font-size: 16px;
+  font-family: $font-body;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: $color-text;
+  background: $color-bg;
   -webkit-font-smoothing: antialiased;
-  color: $body-text-color;
-  background: no-repeat top right url('../img/bg-img.jpg');
-  position: relative;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+// 4. TYPOGRAPHY
 h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-font;
-  letter-spacing: -2px;
+  font-family: $font-heading;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  color: $color-text;
+  margin-bottom: 0.5em;
 }
 
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 3.5rem;
-}
-h3 {
-  font-size: 3rem;
-}
-h4 {
-  font-size: 2.8rem;
-}
-h5 {
-  font-size: 2.5rem;
-}
-h6 {
-  font-size: 2rem;
+h1 { font-size: 3.5rem; letter-spacing: -2px; }
+h2 { font-size: 2.5rem; letter-spacing: -1.5px; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1.1rem; letter-spacing: 0; }
+
+p {
+  margin-bottom: 1.25rem;
 }
 
 a {
-  color: $body-link-color;
+  color: $color-text;
+  text-decoration-color: $color-accent;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+
+  &:hover {
+    color: $color-accent;
+  }
 }
 
-.page-header {
-  background: none;
-  padding: 5rem 2rem;
+blockquote {
+  border-left: 3px solid $color-accent;
+  padding: 0.5rem 1.25rem;
+  margin: 1.5rem 0;
+  color: $color-text-muted;
+  font-style: italic;
+}
 
-  .project-name, .project-tagline {
-    max-width: 1000px;
-    margin: 1rem auto;
-    font-family: $heading-font;
-    font-size: 5rem;
-    color: $body-text-color;
+hr {
+  border: none;
+  border-top: 1px solid $color-border;
+  margin: 3rem 0;
+}
+
+ul, ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+
+  td, th {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid $color-border;
+    text-align: left;
+    vertical-align: top;
   }
 
-  .project-tagline {
-    font-size: 1.7rem;
-    font-family: $body-font;
+  td:first-child {
+    font-weight: 700;
+    white-space: nowrap;
+    width: 140px;
+    color: $color-text-muted;
+  }
+}
+
+// 5. LAYOUT
+.site-wrapper {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+// 6. HEADER
+.site-header {
+  padding: 4rem 0 2rem;
+
+  .site-title {
+    font-size: 4rem;
+    letter-spacing: -2.5px;
+    margin-bottom: 0.25em;
+    line-height: 1.05;
+  }
+
+  .site-tagline {
+    font-family: $font-body;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: $color-text-muted;
     letter-spacing: 0;
-    color: $body-text-color;
-    opacity: 0.85;
-    &.small {
-      font-size: 1.3rem;
-    }
+    line-height: 1.6;
+    max-width: 600px;
+  }
+
+  .site-hint {
+    font-size: 0.9rem;
+    color: darken($color-border, 20%);
+    margin-top: 0.5rem;
   }
 }
 
+// 7. MAIN CONTENT
 .main-content {
-  margin-top: 2rem;
-  max-width:72rem;
+  padding-bottom: 2rem;
 
-  h1, h2, h3, h4, h5, h6 {
-    color: $section-headings-color;
+  h2 {
+    margin-top: 2.5rem;
   }
 
-  p img, .img-thumb {
-    border-radius: 1rem;
-    box-shadow: $box-shadow-default;
-  }
-
-  table {
-    display: table;
-    font-size: 80%;
-
-    td:first-child {
-      width: 140px;
-    }
+  p img {
+    border-radius: $radius;
+    box-shadow: $box-shadow;
+    margin: 0.5rem 0;
   }
 
   p a, li a {
-    color: darken($header-bg-color-secondary, 20%);
+    color: darken($color-accent-secondary, 10%);
     &:hover {
-      color: $header-bg-color-secondary;
+      color: $color-accent-secondary;
     }
   }
 
-  hr {
-    background: $border-color;
-    margin: 3rem 0;
+  em {
+    display: block;
+    font-size: 0.85rem;
+    color: $color-text-muted;
+    margin-top: -0.25rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+// 8. SECTIONS
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-label {
+  font-family: $font-body;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $color-text-muted;
+  margin-bottom: 1.5rem;
+}
+
+// 9. CASE STUDIES GRID
+.cases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.case-card {
+  display: block;
+  text-decoration: none;
+  border-radius: $radius;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: $box-shadow;
   }
 
-  hr {
-    overflow: visible; /* For IE */
+  .case-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: $radius;
+  }
+
+  .case-meta {
+    padding: 1rem 0;
+  }
+
+  .case-title {
+    font-family: $font-heading;
+    font-size: 1.4rem;
+    color: $color-text;
+    margin-bottom: 0.25rem;
+    letter-spacing: -0.5px;
+  }
+
+  .case-desc {
+    font-size: 0.9rem;
+    color: $color-text-muted;
+    line-height: 1.5;
+  }
+}
+
+// 10. SKILLS GRID
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.skill-block {
+  h4 {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.5px;
+  }
+
+  ul {
+    list-style: none;
     padding: 0;
-    border: none;
-    border-top: medium $border-color;
-    color: $border-color;
-    text-align: center;
   }
-  hr:after {
-    content: "• • •";
-    display: inline-block;
-    position: relative;
-    top: -0.8em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
-  }
-}
-
-ul li {
-  margin-bottom: 8px;
-}
-
-.menu {
-  padding-left: 0;
-  margin: 0 0 2px;
 
   li {
-    display: inline-block;
-    list-style-type: none;
-    vertical-align: bottom;
+    font-size: 0.9rem;
+    color: $color-text-muted;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
 
-    a {
-      padding: 1rem;
-      font-size: 1.3rem;
-      display: inline-block;
-      font-family: $heading-font;
-      color: $body-text-color;
-
-      [class|="icon"] {
-        font-size: 1.4rem;
-      }
+    &::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: $color-border;
     }
   }
 }
 
-.thumb-clickable {
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    transform: scale(1.008);
+// 11. COMMUNITY / EXTERNAL WORK
+.community-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  a {
+    display: block;
+    border-radius: $radius;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    border-radius: $radius;
+    box-shadow: $box-shadow;
   }
 }
 
+// 12. FOOTER
 .site-footer {
-  margin-top: 4rem;
-  border-top-color: #E5E5E5;
+  border-top: 1px solid $color-border;
+  padding: 2rem 0 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
 
-  .site-footer-credits {
-    display: inline-block;
-    margin-top: 2rem;
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+
+  li {
+    margin: 0;
   }
 
-  .menu li a {
-    color: $body-text-color;
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    color: $color-text-muted;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: color 0.15s ease, background 0.15s ease;
+
+    &:hover {
+      color: $color-accent;
+      background: rgba($color-accent, 0.06);
+    }
+
+    [class^="icon-"], [class*=" icon-"] {
+      margin: 0;
+    }
   }
 }
 
-
-// 5. CUSTOM CLASSES
-
-.thumbnail {
-  border: 6px solid #fff;
-  border-radius: 3px;
-  box-shadow: $box-shadow-default;
+// 13. PROJECT PAGE
+.project-header-img {
+  width: 100%;
+  margin: -2rem 0 2rem;
 }
 
-.thumbnail-rounded {
+.project-nav {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid $color-border;
+
+  h4 {
+    margin-bottom: 0.75rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 0.35rem;
+  }
+
+  a {
+    text-decoration-color: $color-accent;
+  }
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.75rem;
+  border-radius: 2rem;
+  font-family: $font-heading;
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid $color-border;
+  color: $color-text;
+  transition: border-color 0.15s ease;
+
+  &:hover {
+    border-color: $color-accent;
+    color: $color-accent;
+  }
+}
+
+// 14. 404
+.page-404 {
+  text-align: center;
+  padding: 4rem 0;
+
+  .thumbnail {
+    border-radius: $radius;
+    box-shadow: $box-shadow;
+    max-width: 500px;
+  }
+}
+
+// 15. PROFILE IMAGE
+.profile-img {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
+  margin-bottom: 1.5rem;
 }
 
+// 16. UTILITIES
+.text-center { text-align: center; }
 .highlighted {
   position: relative;
   &::after {
     content: "*";
-    color: $header-bg-color-secondary;
+    color: $color-accent-secondary;
   }
 }
 
-.link-fancy {
-  color: $body-link-color;
-  text-decoration: none;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: $header-bg-color-secondary;
-    content: '';
-    opacity: 0;
-    @include transition(height 0.3s, opacity 0.3s, -webkit-transform 0.3s);
-    @include translateY(-10px);
+// 17. RESPONSIVE
+@media (max-width: 640px) {
+  .site-header .site-title {
+    font-size: 2.5rem;
   }
 
-  &:hover, &.active {
-    text-decoration: none;
-    &::after {
-      height: 3px;
-      opacity: 1;
-      @include translateY(0px);
-    }
-  }
-}
-
-.button-fancy {
-  padding: 1rem;
-  border-radius: 2rem;
-  font-family: $heading-font;
-  font-size: 1.3rem;
-  display: block;
-  text-align: center;
-  max-width: 280px;
-  margin: 0 auto;
-  background: $gradient;
-  border: 1px solid $body-text-color;
-  color: $body-link-color;
-  box-shadow: $box-shadow-default;
-  @include translateY(0px);
-  @include transition(opacity, -webkit-transform 0.05s);
-  &:hover, &:active {
-    @include translateY(1px);
-    text-decoration: none;
-    box-shadow: none;
-    opacity: 0.97;
-  }
-}
-
-.text-center {
-  text-align: center;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-column-gap: 1.5rem;
-  grid-row-gap: 1.5rem;
-}
-
-.grid-item {
-  background-color: #fff;
-  padding: 1.5rem;
-
-  img, h3 {
-    display: block;
-    margin: 1rem auto;
-    text-align: center;
-  }
-}
-
-.profile-img {
-  float: left;
-  margin-left: 15%;
-}
-
-// Work examples grid
-.work-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr auto 1fr;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
-}
-
-@media (max-width: 580px) {
-  .work-container, .grid-container {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: auto;
+  .site-header .site-tagline {
+    font-size: 1.1rem;
   }
 
-  .site-footer .menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
 
-.work-container > * {
-  border-radius: 1.5rem;
-}
-
-@media (min-width: 580px) {
-  .item-1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 
-  .item-2 {
-    grid-column-start: 3;
-    grid-column-end: end;
-    grid-row-start: 1;
-    grid-row-end: 2;
+  .community-grid {
+    grid-template-columns: 1fr;
   }
 
-  .item-3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: end;
-  }
-
-  .item-4 {
-    grid-column-start: 2;
-    grid-column-end: end;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  .item-5 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: end;
-  }
-
-  .item-6 {
-    grid-column-start: 3;
-    grid-column-end: end;
-    grid-row-start: 3;
-    grid-row-end: end;
+  .site-wrapper {
+    padding: 0 1rem;
   }
 }
