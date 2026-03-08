@@ -1,6 +1,6 @@
 ---
 layout: index
-title: Hi, I'm Marija,
+title: Hi, I'm Marija.
 description: "Principal designer turned product manager based in Berlin. I shape product strategy, lead cross-functional teams, and turn ambiguity into shipped outcomes. Currrently, I'm doing magic at Sauce Labs."
 hint: "The \"j\" is silent."
 permalink: /

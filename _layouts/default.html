@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
+<html lang="{{ site.lang | default: 'en-US' }}" data-era="now">
 <head>
     {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
@@ -16,9 +16,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="IzPGM6Wu4GKbua5PpXYHBZnq2gQ9idyE5ZlEpaLG6mM" />
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script>
+        // Apply saved era immediately to prevent flash
+        (function() {
+            var saved = localStorage.getItem('portfolio-era');
+            if (saved) {
+                document.documentElement.setAttribute('data-era', saved);
+            }
+        })();
+    </script>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <!-- Era Switcher -->
+    <div class="era-switcher" role="radiogroup" aria-label="Select design era">
+        <span class="era-switcher-label">Select your era</span>
+        <div class="era-options">
+            <button class="era-btn" data-era="90s" role="radio" aria-checked="false">90s</button>
+            <button class="era-btn" data-era="2000s" role="radio" aria-checked="false">2000s</button>
+            <button class="era-btn" data-era="2010s" role="radio" aria-checked="false">2010s</button>
+            <button class="era-btn active" data-era="now" role="radio" aria-checked="true">Now</button>
+        </div>
+    </div>
+
+    <div class="cursor-glow" aria-hidden="true"></div>
     <div class="site-wrapper">
+        <!-- 90s-only marquee -->
+        <div class="marquee-banner" aria-hidden="true">
+            <span>*** Welcome to my homepage!!! *** Best viewed in Netscape Navigator *** Under construction *** You are visitor #{{ "now" | date: "%s" | modulo: 9999 | plus: 1337 }} ***</span>
+        </div>
+
         <header class="site-header">
             <h1 class="site-title">{{ page.title | default: site.title }}</h1>
             {% if page.description %}
@@ -29,13 +57,83 @@
             {% endif %}
         </header>
 
-        <main class="main-content">
+        <main class="main-content" id="main-content">
             {{ content }}
         </main>
 
         <footer class="site-footer">
             {% include social.html %}
+            <!-- 90s-only visitor counter -->
+            <div class="visitor-counter" aria-hidden="true">
+                You are visitor #<span>{{ "now" | date: "%s" | modulo: 9999 | plus: 1337 }}</span>
+            </div>
         </footer>
     </div>
+
+    <script>
+    (function() {
+        var root = document.documentElement;
+        var buttons = document.querySelectorAll('.era-btn');
+        var saved = localStorage.getItem('portfolio-era') || 'now';
+
+        function setEra(era) {
+            root.setAttribute('data-era', era);
+            localStorage.setItem('portfolio-era', era);
+
+            buttons.forEach(function(btn) {
+                var isActive = btn.getAttribute('data-era') === era;
+                btn.classList.toggle('active', isActive);
+                btn.setAttribute('aria-checked', isActive ? 'true' : 'false');
+            });
+        }
+
+        // Initialize
+        setEra(saved);
+
+        // Click handlers
+        buttons.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                setEra(this.getAttribute('data-era'));
+            });
+        });
+
+        // Keyboard navigation within the switcher
+        var optionsContainer = document.querySelector('.era-options');
+        optionsContainer.addEventListener('keydown', function(e) {
+            var eras = ['90s', '2000s', '2010s', 'now'];
+            var current = root.getAttribute('data-era');
+            var idx = eras.indexOf(current);
+
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+                e.preventDefault();
+                idx = (idx + 1) % eras.length;
+                setEra(eras[idx]);
+                buttons[idx].focus();
+            } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                e.preventDefault();
+                idx = (idx - 1 + eras.length) % eras.length;
+                setEra(eras[idx]);
+                buttons[idx].focus();
+            }
+        });
+    })();
+
+    // Cursor glow for Now era
+    (function() {
+        var glow = document.querySelector('.cursor-glow');
+        if (!glow) return;
+
+        document.addEventListener('mousemove', function(e) {
+            if (document.documentElement.getAttribute('data-era') !== 'now') return;
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+            glow.style.opacity = '1';
+        });
+
+        document.addEventListener('mouseleave', function() {
+            glow.style.opacity = '0';
+        });
+    })();
+    </script>
 </body>
 </html>
