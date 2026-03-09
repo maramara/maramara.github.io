@@ -801,14 +801,37 @@ p {
   }
 
   // -- Layout
-  .site-wrapper {
+  .site-wrapper,
+  .site-header {
+    max-width: 100%;
+    padding: 0;
+  }
+
+
+  .main-content,
+  .site-footer {
     max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   // -- Header
   .site-header {
-    padding: 6rem 0 3rem;
+    padding: 6rem 2rem;
     text-align: center;
+    background: #e1f1ff;
+    position: relative;
+    overflow: hidden;
+    perspective: 800px;
+
+    .header-content {
+      position: relative;
+      z-index: 1;
+      transition: transform 0.15s ease-out;
+      will-change: transform;
+    }
 
     .site-title {
       font-size: 2.8rem;
@@ -830,6 +853,52 @@ p {
       font-size: 0.85rem;
       color: #767676;
       margin-top: 0.75rem;
+    }
+  }
+
+  // -- Parallax circles
+  .header-circle {
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.45);
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+    z-index: 0;
+
+    &--1 {
+      width: 200px;
+      height: 200px;
+      top: -40px;
+      left: 10%;
+    }
+
+    &--2 {
+      width: 120px;
+      height: 120px;
+      bottom: -30px;
+      right: 15%;
+    }
+
+    &--3 {
+      width: 80px;
+      height: 80px;
+      top: 30%;
+      right: 35%;
+    }
+
+    &--4 {
+      width: 150px;
+      height: 150px;
+      bottom: -20px;
+      left: 35%;
+    }
+
+    &--5 {
+      width: 60px;
+      height: 60px;
+      top: 15%;
+      right: 8%;
     }
   }
 
@@ -1266,7 +1335,8 @@ p {
 // 8. HIDDEN BY DEFAULT (shown per-era)
 // ============================================================
 .marquee-banner,
-.visitor-counter {
+.visitor-counter,
+.header-circle {
   display: none;
 }
 

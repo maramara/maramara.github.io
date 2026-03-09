@@ -48,13 +48,20 @@
         </div>
 
         <header class="site-header">
-            <h1 class="site-title">{{ page.title | default: site.title }}</h1>
-            {% if page.description %}
-            <p class="site-tagline">{{ page.description }}</p>
-            {% endif %}
-            {% if page.hint %}
-            <p class="site-hint">{{ page.hint }}</p>
-            {% endif %}
+            <div class="header-circle header-circle--1" aria-hidden="true"></div>
+            <div class="header-circle header-circle--2" aria-hidden="true"></div>
+            <div class="header-circle header-circle--3" aria-hidden="true"></div>
+            <div class="header-circle header-circle--4" aria-hidden="true"></div>
+            <div class="header-circle header-circle--5" aria-hidden="true"></div>
+            <div class="header-content">
+                <h1 class="site-title">{{ page.title | default: site.title }}</h1>
+                {% if page.description %}
+                <p class="site-tagline">{{ page.description }}</p>
+                {% endif %}
+                {% if page.hint %}
+                <p class="site-hint">{{ page.hint }}</p>
+                {% endif %}
+            </div>
         </header>
 
         <main class="main-content" id="main-content">
@@ -134,6 +141,70 @@
             glow.style.opacity = '0';
         });
     })();
+
+    // 2010s header parallax: tilt + circle scroll
+    (function() {
+        var header = document.querySelector('.site-header');
+        var headerContent = document.querySelector('.header-content');
+        var circles = document.querySelectorAll('.header-circle');
+        if (!header || !headerContent) return;
+
+        var maxRotate = 3;
+        var maxSkew = 1;
+        // Each circle moves at a different scroll speed
+        var speeds = [0.3, 0.5, 0.2, 0.4, 0.15];
+
+        function is2010s() {
+            return document.documentElement.getAttribute('data-era') === '2010s';
+        }
+
+        // Tilt on mousemove
+        document.addEventListener('mousemove', function(e) {
+            if (!is2010s()) return;
+
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            var x = (e.clientX / w - 0.5) * 2;
+            var y = (e.clientY / h - 0.5) * 2;
+
+            var rotateY = x * maxRotate;
+            var rotateX = -y * maxRotate;
+            var skewX = x * maxSkew;
+            var skewY = y * maxSkew * 0.5;
+
+            headerContent.style.transform =
+                'rotateX(' + rotateX + 'deg) ' +
+                'rotateY(' + rotateY + 'deg) ' +
+                'skew(' + skewX + 'deg, ' + skewY + 'deg)';
+        });
+
+        document.addEventListener('mouseleave', function() {
+            if (!is2010s()) return;
+            headerContent.style.transform = '';
+        });
+
+        // Scroll parallax for circles
+        function onScroll() {
+            if (!is2010s()) return;
+            var scrollY = window.pageYOffset;
+            circles.forEach(function(circle, i) {
+                var speed = speeds[i] || 0.3;
+                circle.style.transform = 'translateY(' + (-scrollY * speed) + 'px)';
+            });
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        // Reset when switching away from 2010s
+        var observer = new MutationObserver(function() {
+            if (!is2010s()) {
+                headerContent.style.transform = '';
+                circles.forEach(function(c) { c.style.transform = ''; });
+            }
+        });
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-era'] });
+    })();
+
     </script>
 </body>
 </html>
